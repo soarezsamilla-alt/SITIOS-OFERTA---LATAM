@@ -1,0 +1,83 @@
+
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
+
+const bonuses = [
+  {
+    id: 'bonus-construction',
+    badge: 'BONO 01',
+    title: 'Pack de Construcciones Rurales',
+    desc: '10 planos listos de gallineros, porquerizas, establos y tanques con medidas y materiales.',
+    oldPrice: '$14.90'
+  },
+  {
+    id: 'bonus-roi',
+    badge: 'BONO 02',
+    title: 'Calculadora de ROI Productivo',
+    desc: 'Calculadora editable que muestra el retorno financiero estimado de cada zona de tu finca.',
+    oldPrice: '$14.90'
+  },
+  {
+    id: 'bonus-plants',
+    badge: 'BONO 03',
+    title: 'Guía de Plantas Compañeras',
+    desc: 'Aprende qué plantar junto para aumentar productividad naturalmente. Pares ideales.',
+    oldPrice: '$14.90'
+  },
+  {
+    id: 'bonus-solar',
+    badge: 'BONO 04',
+    title: 'Manual de Energía Solar Rural',
+    desc: 'Dimensiona sistemas solares para casas rurales, pozos y riego. Cálculos paso a paso.',
+    oldPrice: '$14.90'
+  }
+];
+
+export default function Bonus() {
+  return (
+    <section className="py-24 bg-accent/5">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            Tú Productor <span className="text-primary italic">Mereces Aún Más</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Quien asegure el Plan Pro lleva también estos 4 bonos estratégicos que complementan los +100 proyectos.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {bonuses.map((bonus, idx) => {
+            const imgData = PlaceHolderImages.find(img => img.id === bonus.id);
+            return (
+              <div key={idx} className="bg-card rounded-2xl overflow-hidden shadow-xl hover:translate-y-[-8px] transition-transform duration-300 border border-border/50">
+                <div className="bg-secondary text-primary px-4 py-2 text-xs font-bold tracking-widest text-center">
+                  {bonus.badge}
+                </div>
+                <div className="relative h-48 gold-gradient">
+                  {imgData && (
+                    <Image
+                      src={imgData.imageUrl}
+                      alt={bonus.title}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={imgData.imageHint}
+                    />
+                  )}
+                </div>
+                <div className="p-8 text-center">
+                  <h3 className="text-xl font-bold mb-3">{bonus.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-6 leading-relaxed">{bonus.desc}</p>
+                  <div className="flex items-center justify-center gap-4">
+                    <span className="text-muted-foreground line-through text-sm">{bonus.oldPrice}</span>
+                    <span className="text-primary font-bold text-xl tracking-tight">GRATIS</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,77 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-mockup",
+      "description": "Mockup of the Pack Rural Planner",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777782303045-ef831fc6-0261-4e78-b48a-6e2c42af9109.png",
+      "imageHint": "farming plans"
+    },
+    {
+      "id": "sample-1",
+      "description": "Technical project sample 08",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777337084037-1f2ff87f-b895-4b37-b711-717bdf832e21.blob",
+      "imageHint": "farm blueprint"
+    },
+    {
+      "id": "sample-2",
+      "description": "Technical project sample 09",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777337122577-5d6b87ca-fd17-4093-a9c0-2fede5187f55.blob",
+      "imageHint": "rural design"
+    },
+    {
+      "id": "sample-3",
+      "description": "Rural Technical Project",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777326963015-ec9779fc-9a3a-427f-ac25-eaf771bce357.blob",
+      "imageHint": "agricultural plan"
+    },
+    {
+      "id": "sample-4",
+      "description": "Pasture Division Plan",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777326290465-87cdd7ee-7d0e-49bf-9f14-c2bd33a149f9.blob",
+      "imageHint": "land division"
+    },
+    {
+      "id": "sample-5",
+      "description": "Premium Detail Project",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777172189294-ce35de3a-6a75-425c-aef7-a9a57c120ea9.blob",
+      "imageHint": "detailed map"
+    },
+    {
+      "id": "product-mockup-detailed",
+      "description": "Detailed mockup of the collection",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778096022039-5a2922a0-be2d-46b2-a4b8-8b9f8629d0cc.png",
+      "imageHint": "digital products"
+    },
+    {
+      "id": "bonus-construction",
+      "description": "Pack of Rural Constructions",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776989218853-f672d256-fd60-4ebb-b93b-cca55d24834e.png",
+      "imageHint": "farm building"
+    },
+    {
+      "id": "bonus-roi",
+      "description": "ROI Calculator",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776989637233-2138a66b-6e74-47b8-a310-c769cbab9ee0.png",
+      "imageHint": "financial calculator"
+    },
+    {
+      "id": "bonus-plants",
+      "description": "Companion Plants Guide",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776990091189-1a18ba2f-aa5c-4303-891c-4955928f4b36.png",
+      "imageHint": "green plants"
+    },
+    {
+      "id": "bonus-solar",
+      "description": "Rural Solar Energy Manual",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1776991160600-6a1cc239-e622-4e95-b2d9-96f749ca331c.png",
+      "imageHint": "solar panel"
+    },
+    {
+      "id": "basic-plan-mockup",
+      "description": "Basic Plan Mockup",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1777782450071-a0388525-e66b-4e68-988d-b3915a6fff5b.png",
+      "imageHint": "product box"
+    }
+  ]
+}
