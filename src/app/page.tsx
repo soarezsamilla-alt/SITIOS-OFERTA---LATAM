@@ -7,7 +7,6 @@ import Bonus from '@/components/sections/Bonus';
 import Pricing from '@/components/sections/Pricing';
 import Testimonials from '@/components/sections/Testimonials';
 import FAQ from '@/components/sections/FAQ';
-import AIAssistant from '@/components/sections/AIAssistant';
 import Footer from '@/components/layout/Footer';
 
 export default function LandingPage() {
@@ -21,7 +20,6 @@ export default function LandingPage() {
       <Hero />
       <Problems />
       <SamplesCarousel />
-      <AIAssistant />
       <Benefits />
       <Bonus />
       <Testimonials />
