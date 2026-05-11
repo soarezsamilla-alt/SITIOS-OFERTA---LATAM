@@ -73,7 +73,7 @@ export default function Pricing() {
             </div>
 
             {proMockup && (
-              <div className="mb-8 relative w-72 h-72 md:w-80 md:h-80">
+              <div className="mb-8 relative w-full aspect-square max-w-[450px]">
                 <Image src={proMockup.imageUrl} alt="Plano Pro" fill className="object-contain" />
               </div>
             )}
