@@ -72,6 +72,12 @@
       "description": "Basic Plan Mockup",
       "imageUrl": "https://www.image2url.com/r2/default/images/1777782450071-a0388525-e66b-4e68-988d-b3915a6fff5b.png",
       "imageHint": "product box"
+    },
+    {
+      "id": "guarantee-seal",
+      "description": "Guarantee Seal",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778463091136-1f1651c0-cf01-485e-a82e-fe72c74e3af3.png",
+      "imageHint": "guarantee badge"
     }
   ]
 }

@@ -11,6 +11,7 @@ export default function Pricing() {
   const [timeLeft, setTimeLeft] = useState({ h: 23, m: 59, s: 59 });
   const basicMockup = PlaceHolderImages.find(img => img.id === 'basic-plan-mockup');
   const proMockup = PlaceHolderImages.find(img => img.id === 'hero-mockup');
+  const seal = PlaceHolderImages.find(img => img.id === 'guarantee-seal');
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -103,6 +104,19 @@ export default function Pricing() {
               </div>
               <p className="text-xs text-white/50 mt-2 uppercase tracking-tighter">Pagamento único · Acesso vitalício + Bônus</p>
             </div>
+
+            {seal && (
+              <div className="mb-8 flex justify-center">
+                <Image
+                  src={seal.imageUrl}
+                  alt="Selo de Garantia"
+                  width={140}
+                  height={140}
+                  className="object-contain"
+                  data-ai-hint={seal.imageHint}
+                />
+              </div>
+            )}
 
             {proMockup && (
               <div className="mb-8 relative w-48 h-48">
