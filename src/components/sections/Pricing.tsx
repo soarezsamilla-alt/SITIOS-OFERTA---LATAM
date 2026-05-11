@@ -69,7 +69,7 @@ export default function Pricing() {
                 <span className="text-2xl font-bold text-primary self-start mt-1">R$</span>
                 <span className="text-6xl font-headline font-bold text-primary">97</span>
               </div>
-              <p className="text-xs text-white/50 mt-2 uppercase tracking-tighter">Pagamento único · Acesso vitalício + Bônus</p>
+              <p className="text-[10px] text-white/50 mt-2 uppercase tracking-tighter">Pagamento único · Acesso vitalício + Bônus</p>
             </div>
 
             {proMockup && (
