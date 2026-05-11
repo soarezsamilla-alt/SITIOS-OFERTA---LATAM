@@ -116,6 +116,7 @@ export default function Pricing() {
               <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 2:</strong> Calculadora ROI</li>
               <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
               <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 4:</strong> Energia Solar Rural</li>
+              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Acesso prioritário a novos projetos</li>
               <li className="flex items-center gap-3 text-sm text-white/90 font-bold text-primary"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Atualizações gratuitas semanal</li>
             </ul>
 
