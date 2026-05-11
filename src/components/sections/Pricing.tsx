@@ -111,7 +111,7 @@ export default function Pricing() {
             )}
 
             <ul className="w-full text-left space-y-4 mb-10">
-              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Tudo do Básico</li>
+              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> +100 projetos completos</li>
               <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 1:</strong> Construções Rurais</li>
               <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 2:</strong> Calculadora ROI</li>
               <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
