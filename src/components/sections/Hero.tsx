@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 
 export default function Hero() {
   const mockup = PlaceHolderImages.find(img => img.id === 'hero-mockup');
-  const seal = PlaceHolderImages.find(img => img.id === 'guarantee-seal');
 
   return (
     <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 dark-green-gradient">
@@ -20,19 +19,6 @@ export default function Hero() {
         <p className="text-lg md:text-2xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
           A biblioteca mais completa de projetos rurais da América Latina com +100 plantas profissionais com medidas reais, divisões estratégicas e designs prontos para executar.
         </p>
-
-        {seal && (
-          <div className="mb-12 flex justify-center">
-            <Image
-              src={seal.imageUrl}
-              alt="Selo de Garantia"
-              width={180}
-              height={180}
-              className="object-contain"
-              data-ai-hint={seal.imageHint}
-            />
-          </div>
-        )}
 
         {mockup && (
           <div className="relative max-w-3xl mx-auto mb-12 group">
