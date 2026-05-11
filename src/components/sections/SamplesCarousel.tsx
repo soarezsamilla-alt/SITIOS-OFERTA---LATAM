@@ -26,10 +26,10 @@ export default function SamplesCarousel() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">
-            Una Muestra Del Material Que Vas A <span className="text-primary italic">Recibir</span>
+            Uma Amostra do Material que Você vai <span className="text-primary italic">Receber</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Mira a continuación ejemplos reales de las páginas que vas a recibir. Cada proyecto entregado con calidad editorial profesional.
+            Veja abaixo exemplos reais das páginas que você vai receber. Cada projeto entregue com qualidade editorial profissional.
           </p>
         </div>
 
@@ -73,9 +73,9 @@ export default function SamplesCarousel() {
         </div>
 
         <div className="mt-16 bg-card p-8 rounded-2xl border-l-4 border-l-primary max-w-4xl mx-auto shadow-sm">
-          <h4 className="text-xl font-bold text-foreground mb-3 font-headline">Observación Importante</h4>
+          <h4 className="text-xl font-bold text-foreground mb-3 font-headline">Observação Importante</h4>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Todos los +100 proyectos siguen el mismo estándar editorial premium que ves en las muestras anteriores — con medidas visibles, zonas identificadas y diseños profesionales.
+            Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas e designs profissionais.
           </p>
         </div>
       </div>

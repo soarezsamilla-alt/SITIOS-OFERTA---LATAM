@@ -14,7 +14,7 @@ export default function LandingPage() {
     <main className="min-h-screen">
       {/* Top Bar Announcement */}
       <div className="bg-background text-primary py-3 text-center text-xs md:text-sm font-bold tracking-[0.2em] border-b border-primary/30 uppercase">
-        ★ OFERTA DE LANZAMIENTO · EDICIÓN LIMITADA 2026 ★
+        ★ OFERTA DE LANÇAMENTO · EDIÇÃO LIMITADA 2026 ★
       </div>
 
       <Hero />
@@ -30,11 +30,11 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="inline-block bg-background border-4 border-primary p-12 rounded-full mb-10 shadow-2xl">
             <div className="text-7xl font-headline font-bold text-secondary leading-none">7</div>
-            <div className="text-primary font-bold uppercase tracking-widest text-sm mt-2">Días</div>
+            <div className="text-primary font-bold uppercase tracking-widest text-sm mt-2">Dias</div>
           </div>
-          <h2 className="text-4xl font-headline font-bold mb-6 text-foreground">Garantía Incondicional</h2>
+          <h2 className="text-4xl font-headline font-bold mb-6 text-foreground">Garantia Incondicional</h2>
           <p className="text-muted-foreground text-xl max-w-2xl mx-auto leading-relaxed">
-            Si dentro de 7 días consideras que no vale la inversión, te devolvemos <strong>100% de tu dinero</strong>. Sin preguntas. Sin burocracia. El riesgo es todo nuestro.
+            Se dentro de 7 dias você considerar que não vale o investimento, devolvemos <strong>100% do seu dinheiro</strong>. Sem perguntas. Sem burocracia. O risco é todo nosso.
           </p>
         </div>
       </section>

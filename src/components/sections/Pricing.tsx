@@ -29,10 +29,10 @@ export default function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-            Asegura Ahora Con <span className="text-primary italic">Precio Especial</span>
+            Garanta Agora com <span className="text-primary italic">Preço Especial</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Ambas opciones incluyen acceso vitalicio y 7 días de garantía total.
+            Ambas as opções incluem acesso vitalício e 7 dias de garantia total.
           </p>
         </div>
 
@@ -41,37 +41,37 @@ export default function Pricing() {
           <div className="bg-card p-10 rounded-3xl border border-border flex flex-col items-center text-center relative shadow-sm">
             <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plan Básico</p>
             <h3 className="text-3xl font-headline font-bold mb-6">Básico</h3>
-            <p className="text-muted-foreground mb-8 text-sm">Todo lo que necesitas para planificar tu finca desde cero.</p>
+            <p className="text-muted-foreground mb-8 text-sm">Tudo o que você precisa para planejar sua fazenda do zero.</p>
             
             <div className="mb-8">
-              <span className="text-muted-foreground line-through block text-sm mb-1">De $39.00 USD por</span>
+              <span className="text-muted-foreground line-through block text-sm mb-1">De R$ 197 por</span>
               <div className="flex items-center justify-center gap-1">
-                <span className="text-2xl font-bold text-primary self-start mt-1">$</span>
-                <span className="text-6xl font-headline font-bold text-primary">7.90</span>
+                <span className="text-2xl font-bold text-primary self-start mt-1">R$</span>
+                <span className="text-6xl font-headline font-bold text-primary">47</span>
               </div>
-              <p className="text-xs text-muted-foreground mt-2 uppercase tracking-tighter">Pago único · Acceso vitalicio</p>
+              <p className="text-xs text-muted-foreground mt-2 uppercase tracking-tighter">Pagamento único · Acesso vitalício</p>
             </div>
 
             {basicMockup && (
               <div className="mb-8 relative w-48 h-48">
-                <Image src={basicMockup.imageUrl} alt="Basic Plan" fill className="object-contain" />
+                <Image src={basicMockup.imageUrl} alt="Plano Básico" fill className="object-contain" />
               </div>
             )}
 
             <ul className="w-full text-left space-y-4 mb-10">
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>+100 proyectos completos</strong></li>
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Acceso inmediato</li>
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Garantía de 7 días</li>
-              <li className="flex items-center gap-3 text-sm opacity-40 line-through"><Check className="w-5 h-5 flex-shrink-0" /> 4 Bonos Estratégicos</li>
+              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>+100 projetos completos</strong></li>
+              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Acesso imediato</li>
+              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Garantia de 7 dias</li>
+              <li className="flex items-center gap-3 text-sm opacity-40 line-through"><Check className="w-5 h-5 flex-shrink-0" /> 4 Bônus Estratégicos</li>
             </ul>
 
-            <Button className="w-full py-8 text-lg font-bold bg-secondary hover:bg-secondary/90">ASEGURAR BÁSICO</Button>
+            <Button className="w-full py-8 text-lg font-bold bg-secondary hover:bg-secondary/90">GARANTIR BÁSICO</Button>
           </div>
 
           {/* Plan Pro */}
           <div className="bg-secondary/20 p-10 rounded-3xl border-2 border-primary flex flex-col items-center text-center relative shadow-2xl scale-105">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 gold-gradient text-background px-6 py-1.5 rounded-full text-xs font-bold tracking-widest whitespace-nowrap">
-              ★ MÁS ELEGIDO ★
+              ★ MAIS ESCOLHIDO ★
             </div>
             
             <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plan Pro</p>
@@ -79,7 +79,7 @@ export default function Pricing() {
             
             <div className="w-full bg-destructive/10 border border-destructive/30 p-4 rounded-xl mb-8">
               <p className="text-destructive font-bold text-xs uppercase tracking-widest mb-3 flex items-center justify-center gap-2">
-                <Zap className="w-4 h-4" /> Oferta Termina En:
+                <Zap className="w-4 h-4" /> Oferta Termina Em:
               </p>
               <div className="flex justify-center gap-3">
                 {[
@@ -96,34 +96,34 @@ export default function Pricing() {
             </div>
 
             <div className="mb-8">
-              <span className="text-white/50 line-through block text-sm mb-1">De $79.00 USD por</span>
+              <span className="text-white/50 line-through block text-sm mb-1">De R$ 397 por</span>
               <div className="flex items-center justify-center gap-1">
-                <span className="text-2xl font-bold text-primary self-start mt-1">$</span>
-                <span className="text-6xl font-headline font-bold text-primary">14.90</span>
+                <span className="text-2xl font-bold text-primary self-start mt-1">R$</span>
+                <span className="text-6xl font-headline font-bold text-primary">97</span>
               </div>
-              <p className="text-xs text-white/50 mt-2 uppercase tracking-tighter">Pago único · Acceso vitalicio + Bonos</p>
+              <p className="text-xs text-white/50 mt-2 uppercase tracking-tighter">Pagamento único · Acesso vitalício + Bônus</p>
             </div>
 
             {proMockup && (
               <div className="mb-8 relative w-48 h-48">
-                <Image src={proMockup.imageUrl} alt="Pro Plan" fill className="object-contain" />
+                <Image src={proMockup.imageUrl} alt="Plano Pro" fill className="object-contain" />
               </div>
             )}
 
             <ul className="w-full text-left space-y-4 mb-10">
-              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Todo del Básico</li>
-              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BONO 1:</strong> Construcciones Rurales</li>
-              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BONO 2:</strong> Calculadora ROI</li>
-              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BONO 3:</strong> Plantas Compañeras</li>
-              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BONO 4:</strong> Energía Solar Rural</li>
-              <li className="flex items-center gap-3 text-sm text-white/90 font-bold text-primary"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Actualizaciones gratuitas</li>
+              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Tudo do Básico</li>
+              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 1:</strong> Construções Rurais</li>
+              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 2:</strong> Calculadora ROI</li>
+              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
+              <li className="flex items-center gap-3 text-sm text-white/90"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>BÔNUS 4:</strong> Energia Solar Rural</li>
+              <li className="flex items-center gap-3 text-sm text-white/90 font-bold text-primary"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Atualizações gratuitas</li>
             </ul>
 
-            <Button className="w-full py-8 text-xl font-bold gold-gradient text-background hover:scale-105 transition-all shadow-xl">QUIERO EL PLAN PRO</Button>
+            <Button className="w-full py-8 text-xl font-bold gold-gradient text-background hover:scale-105 transition-all shadow-xl">QUERO O PLANO PRO</Button>
             
-            <p className="mt-6 text-destructive font-bold text-xs animate-pulse">No vas a encontrar este precio después.</p>
+            <p className="mt-6 text-destructive font-bold text-xs animate-pulse">Você não vai encontrar este preço depois.</p>
             <div className="mt-3 flex items-center gap-2 text-white/50 text-[10px] uppercase tracking-widest">
-              <ShieldCheck className="w-4 h-4" /> Pago 100% seguro · Acceso inmediato
+              <ShieldCheck className="w-4 h-4" /> Pagamento 100% seguro · Acesso imediato
             </div>
           </div>
         </div>

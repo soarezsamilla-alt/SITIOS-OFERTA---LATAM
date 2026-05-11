@@ -10,15 +10,15 @@ export default function Hero() {
     <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 dark-green-gradient">
       <div className="container mx-auto px-4 text-center">
         <p className="font-headline italic text-primary text-lg md:text-xl tracking-widest mb-6">
-          Edición Premium 2026
+          Edição Premium 2026
         </p>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight max-w-5xl mx-auto">
-          +100 Proyectos de Fincas Productivas <span className="text-primary italic">que transforman tu tierra ociosa en fuente de ingresos mensuales</span>
+          +100 Projetos de Fazendas Produtivas <span className="text-primary italic">que transformam sua terra ociosa em fonte de renda mensal</span>
         </h1>
         
         <p className="text-lg md:text-2xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
-          La biblioteca más completa de proyectos rurales de Latinoamérica con +100 planos profesionales con medidas reales, divisiones estratégicas y diseños listos para ejecutar.
+          A biblioteca mais completa de projetos rurais da América Latina com +100 plantas profissionais com medidas reais, divisões estratégicas e designs prontos para executar.
         </p>
 
         {mockup && (
@@ -42,10 +42,10 @@ export default function Hero() {
             size="lg"
             className="gold-gradient text-background hover:scale-105 transition-transform duration-300 font-bold py-8 px-12 text-xl md:text-2xl rounded-xl shadow-[0_10px_40px_rgba(201,169,97,0.4)]"
           >
-            <a href="#pricing">ASEGURAR MI ACCESO</a>
+            <a href="#pricing">GARANTIR MEU ACESSO</a>
           </Button>
           <p className="text-primary text-sm font-semibold tracking-widest uppercase">
-            ★ ACCESO INMEDIATO · 7 DÍAS DE GARANTÍA ★
+            ★ ACESSO IMEDIATO · 7 DIAS DE GARANTIA ★
           </p>
         </div>
       </div>

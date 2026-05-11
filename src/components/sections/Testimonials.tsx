@@ -1,39 +1,39 @@
 
 const testimonials = [
   {
-    text: '"¡Increíble! Pude transformar mis 2 hectáreas en una finca productiva en solo 6 meses. Ya recuperé la inversión del pack 100 veces. Las medidas son exactas."',
+    text: '"Incrível! Pude transformar meus 2 hectares em uma fazenda produtiva em apenas 6 meses. Já recuperei o investimento do pack 100 vezes. As medidas são exatas."',
     name: 'Carlos Mendoza',
     location: 'Veracruz, México',
     flag: '🇲🇽'
   },
   {
-    text: '"Soy nueva en el campo y este pack me salvó. Los planos son muy claros, y ahora tengo café, frutas y huerta funcionando juntos. Todo bien organizado."',
+    text: '"Sou nova no campo e este pack me salvou. As plantas são muito claras, e agora tenho café, frutas e horta funcionando juntos. Tudo bem organizado."',
     name: 'Sofia Ramírez',
-    location: 'Antioquia, Colombia',
+    location: 'Antioquia, Colômbia',
     flag: '🇨🇴'
   },
   {
-    text: '"Por menos de 15 dólares recibí más valor que con mi último consultor de 2.500 dólares. La calidad del material es excepcional y aplicable al instante."',
+    text: '"Por menos de 100 reais recebi mais valor do que com meu último consultor de 12.000 reais. A qualidade do material é excepcional e aplicável instantaneamente."',
     name: 'Diego Fernández',
     location: 'Mendoza, Argentina',
     flag: '🇦🇷'
   },
   {
-    text: '"Tengo una pequeña finca de 1 hectárea en los Andes y encontré proyectos adaptados a mi región. Ya estoy generando 1.500 dólares mensuales."',
+    text: '"Tenho uma pequena fazenda de 1 hectare nos Andes e encontrei projetos adaptados à minha região. Já estou gerando R$ 7.500 mensais."',
     name: 'María González',
-    location: 'Cusco, Perú',
+    location: 'Cusco, Peru',
     flag: '🇵🇪'
   },
   {
-    text: '"Era escéptico al principio, pero los proyectos son realmente profesionales. Mi parcela está organizada como una empresa rural ahora."',
+    text: '"Era cético no início, mas os projetos são realmente profissionais. Minha parcela está organizada como uma empresa rural agora."',
     name: 'Juan Castro',
     location: 'Valparaíso, Chile',
     flag: '🇨🇱'
   },
   {
-    text: '"Perfecto para principiantes. Las medidas son exactas y todo viene explicado paso a paso. Ya recomendé a 5 amigos y todos están encantados."',
+    text: '"Perfeito para iniciantes. As medidas são exatas e tudo vem explicado passo a passo. Já recomendei a 5 amigos e todos estão encantados."',
     name: 'Lucia Vargas',
-    location: 'Pichincha, Ecuador',
+    location: 'Pichincha, Equador',
     flag: '🇪🇨'
   }
 ];
@@ -44,10 +44,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Quien Compró, <span className="text-primary italic">Recomienda</span>
+            Quem Comprou, <span className="text-primary italic">Recomenda</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Mira lo que productores rurales que ya están utilizando dicen sobre el material.
+            Veja o que produtores rurais que já estão utilizando dizem sobre o material.
           </p>
         </div>
 

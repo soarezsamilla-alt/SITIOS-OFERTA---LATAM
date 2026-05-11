@@ -1,14 +1,14 @@
 
 const benefits = [
-  { val: '+100', title: 'Proyectos Completos', desc: 'Planos técnicos dimensionados listos para que ejecutes' },
-  { val: '0,5-5', title: 'Hectáreas Cubiertas', desc: 'Tienes proyecto para tu tamaño de terreno, sin importar cuál sea' },
-  { val: '7', title: 'Vocaciones Productivas', desc: 'Café, hortifruti, ganadería, piscicultura, agroforestería y más' },
-  { val: '5', title: 'Regiones Climáticas', desc: 'Adaptados a Tropical Húmedo, Sabana, Semiárido, Templado y Andino' },
-  { val: '$3K', title: 'Ahorrados', desc: 'Equivalente a lo que cobraría un ingeniero agrónomo particular' },
-  { val: '$2.8K', title: 'Ingresos Mensuales', desc: 'Proyección realista basada en casos validados de productores reales' },
-  { val: '100%', title: 'Medidas Probadas', desc: 'Validadas en campo por más de 12 mil productores latinoamericanos' },
-  { val: 'Paso', title: 'A Paso Claro', desc: 'No necesitas ser técnico, solo sigue los planos y aplícalos' },
-  { val: '∞', title: 'Acceso Vitalicio', desc: 'Inmediato después de la compra + actualizaciones futuras gratuitas' },
+  { val: '+100', title: 'Projetos Completos', desc: 'Plantas técnicas dimensionadas prontas para você executar' },
+  { val: '0,5-5', title: 'Hectares Cobertos', desc: 'Você tem projeto para o tamanho do seu terreno, não importa qual seja' },
+  { val: '7', title: 'Vocações Produtivas', desc: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e mais' },
+  { val: '5', title: 'Regiões Climáticas', desc: 'Adaptados a Tropical Úmido, Savana, Semiárido, Temperado e Andino' },
+  { val: 'R$15k', title: 'Economizados', desc: 'Equivalente ao que cobraria um engenheiro agrônomo particular' },
+  { val: 'R$14k', title: 'Renda Mensal', desc: 'Projeção realista baseada em casos validados de produtores reais' },
+  { val: '100%', title: 'Medidas Testadas', desc: 'Validadas em campo por mais de 12 mil produtores latino-americanos' },
+  { val: 'Passo', title: 'a Passo Claro', desc: 'Não precisa ser técnico, basta seguir as plantas e aplicá-las' },
+  { val: '∞', title: 'Acesso Vitalício', desc: 'Imediato após a compra + atualizações futuras gratuitas' },
 ];
 
 export default function Benefits() {
@@ -17,10 +17,10 @@ export default function Benefits() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Proyectos Altamente Dimensionados, <span className="text-primary italic">No Ideas Vagas</span>
+            Projetos Altamente Dimensionados, <span className="text-primary italic">Não Ideias Vagas</span>
           </h2>
           <p className="text-white/70 text-lg max-w-3xl mx-auto">
-            Cada uno de los +100 proyectos fue diseñado como un plano profesional, con medidas reales en metros, división de zonas productivas y diseños de infraestructuras.
+            Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão de zonas produtivas e designs de infraestruturas.
           </p>
         </div>
 
