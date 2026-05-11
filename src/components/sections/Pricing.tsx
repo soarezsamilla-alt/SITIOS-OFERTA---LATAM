@@ -9,7 +9,6 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Pricing() {
   const [timeLeft, setTimeLeft] = useState({ h: 23, m: 59, s: 59 });
-  const basicMockup = PlaceHolderImages.find(img => img.id === 'basic-plan-mockup');
   const proMockup = PlaceHolderImages.find(img => img.id === 'hero-mockup');
 
   useEffect(() => {
@@ -32,46 +31,15 @@ export default function Pricing() {
             Garanta Agora com <span className="text-primary italic">Preço Especial</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Ambas as opções incluem acesso vitalício e 7 dias de garantia total.
+            Inclui acesso vitalício, todos os bônus e 7 dias de garantia total.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Plano Básico */}
-          <div className="bg-card p-10 rounded-3xl border border-border flex flex-col items-center text-center relative shadow-sm">
-            <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plano Básico</p>
-            <h3 className="text-3xl font-headline font-bold mb-6">Básico</h3>
-            <p className="text-muted-foreground mb-8 text-sm">Tudo o que você precisa para planejar sua fazenda do zero.</p>
-            
-            <div className="mb-8">
-              <span className="text-muted-foreground line-through block text-sm mb-1">De R$ 197 por</span>
-              <div className="flex items-center justify-center gap-1">
-                <span className="text-2xl font-bold text-primary self-start mt-1">R$</span>
-                <span className="text-6xl font-headline font-bold text-primary">47</span>
-              </div>
-              <p className="text-xs text-muted-foreground mt-2 uppercase tracking-tighter">Pagamento único · Acesso vitalício</p>
-            </div>
-
-            {basicMockup && (
-              <div className="mb-8 relative w-48 h-48">
-                <Image src={basicMockup.imageUrl} alt="Plano Básico" fill className="object-contain" />
-              </div>
-            )}
-
-            <ul className="w-full text-left space-y-4 mb-10">
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> <strong>+100 projetos completos</strong></li>
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Acesso imediato</li>
-              <li className="flex items-center gap-3 text-sm"><Check className="text-primary w-5 h-5 flex-shrink-0" /> Garantia de 7 dias</li>
-              <li className="flex items-center gap-3 text-sm opacity-40 line-through"><Check className="w-5 h-5 flex-shrink-0" /> 4 Bônus Estratégicos</li>
-            </ul>
-
-            <Button className="w-full py-8 text-lg font-bold bg-secondary hover:bg-secondary/90">GARANTIR BÁSICO</Button>
-          </div>
-
+        <div className="flex justify-center max-w-5xl mx-auto">
           {/* Plano Pro */}
-          <div className="bg-secondary/20 p-10 rounded-3xl border-2 border-primary flex flex-col items-center text-center relative shadow-2xl scale-105">
+          <div className="bg-secondary/20 p-10 rounded-3xl border-2 border-primary flex flex-col items-center text-center relative shadow-2xl scale-105 max-w-md w-full">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 gold-gradient text-background px-6 py-1.5 rounded-full text-xs font-bold tracking-widest whitespace-nowrap">
-              ★ MAIS ESCOLHIDO ★
+              ★ OFERTA LIMITADA ★
             </div>
             
             <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plano Pro</p>
