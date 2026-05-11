@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -38,9 +37,9 @@ export default function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Plan Básico */}
+          {/* Plano Básico */}
           <div className="bg-card p-10 rounded-3xl border border-border flex flex-col items-center text-center relative shadow-sm">
-            <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plan Básico</p>
+            <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plano Básico</p>
             <h3 className="text-3xl font-headline font-bold mb-6">Básico</h3>
             <p className="text-muted-foreground mb-8 text-sm">Tudo o que você precisa para planejar sua fazenda do zero.</p>
             
@@ -69,13 +68,13 @@ export default function Pricing() {
             <Button className="w-full py-8 text-lg font-bold bg-secondary hover:bg-secondary/90">GARANTIR BÁSICO</Button>
           </div>
 
-          {/* Plan Pro */}
+          {/* Plano Pro */}
           <div className="bg-secondary/20 p-10 rounded-3xl border-2 border-primary flex flex-col items-center text-center relative shadow-2xl scale-105">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 gold-gradient text-background px-6 py-1.5 rounded-full text-xs font-bold tracking-widest whitespace-nowrap">
               ★ MAIS ESCOLHIDO ★
             </div>
             
-            <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plan Pro</p>
+            <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plano Pro</p>
             <h3 className="text-3xl font-headline font-bold mb-6">Pro</h3>
             
             <div className="w-full bg-destructive/10 border border-destructive/30 p-4 rounded-xl mb-8">
