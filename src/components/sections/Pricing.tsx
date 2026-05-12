@@ -42,11 +42,9 @@ export default function Pricing() {
               ★ OFERTA LIMITADA ★
             </div>
             
-            <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plano Pro</p>
-            
             <div className="w-full bg-destructive/10 border border-destructive/30 p-4 rounded-xl mb-8">
               <p className="text-destructive font-bold text-xs uppercase tracking-widest mb-3 flex items-center justify-center gap-2">
-                <Zap className="w-4 h-4" /> Oferta Termina Em:
+                < Zap className="w-4 h-4" /> Oferta Termina Em:
               </p>
               <div className="flex justify-center gap-3">
                 {[
@@ -72,7 +70,7 @@ export default function Pricing() {
             </div>
 
             {proMockup && (
-              <div className="mb-8 relative w-full aspect-square max-w-[450px]">
+              <div className="mb-8 relative w-full aspect-square max-w-[650px]">
                 <Image src={proMockup.imageUrl} alt="Plano Pro" fill className="object-contain" />
               </div>
             )}
