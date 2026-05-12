@@ -16,7 +16,7 @@ export default function Hero() {
           +100 Projetos de Fazendas Produtivas <span className="text-primary italic">que transformam sua terra ociosa em fonte de renda mensal</span>
         </h1>
         
-        <p className="text-lg md:text-2xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+        <p className="text-base md:text-lg text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
           A biblioteca mais completa de projetos rurais da América Latina com +100 plantas profissionais com medidas reais, divisões estratégicas e designs prontos para executar.
         </p>
 
