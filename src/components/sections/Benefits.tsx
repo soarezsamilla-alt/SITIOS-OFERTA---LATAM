@@ -19,16 +19,16 @@ export default function Benefits() {
   return (
     <section className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Projetos Altamente Dimensionados, <span className="text-primary italic">Não Ideias Vagas</span>
           </h2>
-          <p className="text-white/70 text-lg max-w-3xl mx-auto mb-10">
+          <p className="text-white/70 text-lg max-w-3xl mx-auto mb-4">
             Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão de zonas produtivas e designs de infraestruturas.
           </p>
 
           {problemsMockup && (
-            <div className="max-w-xl mx-auto mb-12 animate-soft-float">
+            <div className="max-w-xl mx-auto mb-4 animate-soft-float">
               <Image
                 src={problemsMockup.imageUrl}
                 alt={problemsMockup.description}
