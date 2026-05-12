@@ -28,9 +28,9 @@ export default function LandingPage() {
       {/* Guarantee Section */}
       <section className="py-24 bg-accent/10 text-center">
         <div className="container mx-auto px-4">
-          <div className="inline-block bg-background border-4 border-primary p-12 rounded-full mb-10 shadow-2xl">
-            <div className="text-7xl font-headline font-bold text-secondary leading-none">7</div>
-            <div className="text-primary font-bold uppercase tracking-widest text-sm mt-2">Dias</div>
+          <div className="inline-block bg-background border-4 border-primary p-8 rounded-full mb-8 shadow-2xl">
+            <div className="text-5xl font-headline font-bold text-secondary leading-none">7</div>
+            <div className="text-primary font-bold uppercase tracking-widest text-xs mt-1">Dias</div>
           </div>
           <h2 className="text-4xl font-headline font-bold mb-6 text-foreground">Garantia Incondicional</h2>
           <p className="text-muted-foreground text-xl max-w-2xl mx-auto leading-relaxed">
