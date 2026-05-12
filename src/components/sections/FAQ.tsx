@@ -12,10 +12,6 @@ const faqs = [
     a: "Imediatamente após a confirmação do pagamento, você recebe um e-mail com o link de acesso à área de membros, login e senha gerados automaticamente, e todos os PDFs disponíveis para download. Acesso vitalício."
   },
   {
-    q: "Qual a diferença entre o Básico e o Pro?",
-    a: "O PLANO BÁSICO inclui os +100 projetos. O PLANO PRO inclui tudo do básico MAIS os 4 BÔNUS exclusivos (Construções Rurais, Calculadora ROI, Plantas Companheiras, Energia Solar Rural) que valem R$ 297 separadamente."
-  },
-  {
     q: "Preciso ter experiência em agricultura?",
     a: "NÃO! Os projetos vêm prontos para você seguir como um manual visual com plantas técnicas detalhadas e medidas claras. Mesmo quem nunca planejou nada rural consegue aplicar."
   },
