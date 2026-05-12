@@ -68,7 +68,6 @@ const benefits = [
 export default function Benefits() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const problemsMockup = PlaceHolderImages.find(img => img.id === 'problems-mockup');
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -113,27 +112,13 @@ export default function Benefits() {
   return (
     <section className="py-24 bg-secondary overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-4">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Projetos Altamente Dimensionados, <span className="text-primary italic">Não Ideias Vagas</span>
           </h2>
           <p className="text-white/75 text-lg max-w-4xl mx-auto mb-2">
             Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
           </p>
-
-          {problemsMockup && (
-            <div className="max-w-md mx-auto mb-2 animate-soft-float">
-              <Image
-                src={problemsMockup.imageUrl}
-                alt={problemsMockup.description}
-                width={600}
-                height={350}
-                className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
-                data-ai-hint={problemsMockup.imageHint}
-                priority
-              />
-            </div>
-          )}
         </div>
 
         <div className="relative group max-w-7xl mx-auto">
@@ -178,7 +163,7 @@ export default function Benefits() {
 
                   {/* Conteúdo do Card */}
                   <div className="p-6 flex flex-col items-center text-center">
-                    <div className="font-headline font-bold text-primary text-[42px] md:text-[56px] leading-tight mb-4 mt-2">
+                    <div className="font-headline font-bold text-primary text-[56px] leading-tight mb-4 mt-2">
                       {benefit.val}
                     </div>
                     <h3 className="text-white font-bold uppercase tracking-[1px] text-base mb-3 font-body">

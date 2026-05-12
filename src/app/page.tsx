@@ -1,6 +1,8 @@
+
 import Hero from '@/components/sections/Hero';
 import Problems from '@/components/sections/Problems';
 import SamplesCarousel from '@/components/sections/SamplesCarousel';
+import ProductOverview from '@/components/sections/ProductOverview';
 import Benefits from '@/components/sections/Benefits';
 import Bonus from '@/components/sections/Bonus';
 import Pricing from '@/components/sections/Pricing';
@@ -20,6 +22,7 @@ export default function LandingPage() {
       <Hero />
       <Problems />
       <SamplesCarousel />
+      <ProductOverview />
       <Benefits />
       <Bonus />
       <Testimonials />
