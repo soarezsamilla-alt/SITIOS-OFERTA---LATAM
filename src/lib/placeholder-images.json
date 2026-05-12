@@ -77,6 +77,12 @@
       "description": "Guarantee Seal",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778463091136-1f1651c0-cf01-485e-a82e-fe72c74e3af3.png",
       "imageHint": "guarantee badge"
+    },
+    {
+      "id": "problems-mockup",
+      "description": "Technical Professional Plan Mockup",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778552394691-76f979f4-92b8-4995-8bce-ef884aa21ada.png",
+      "imageHint": "technical drawing"
     }
   ]
 }

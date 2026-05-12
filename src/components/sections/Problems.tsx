@@ -1,5 +1,7 @@
 
 import { Card } from '@/components/ui/card';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
 
 const problems = [
   {
@@ -21,6 +23,8 @@ const problems = [
 ];
 
 export default function Problems() {
+  const problemsMockup = PlaceHolderImages.find(img => img.id === 'problems-mockup');
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -28,9 +32,25 @@ export default function Problems() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Sua Terra Merece um <span className="text-primary italic">Plano Profissional</span>
           </h2>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-12">
             A maioria dos pequenos produtores rurais na América Latina opera muito abaixo do potencial por falta de um mapa claro.
           </p>
+
+          {problemsMockup && (
+            <div className="relative max-w-4xl mx-auto mb-16 group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-card rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-primary/10 transition-transform duration-500 hover:scale-[1.01]">
+                <Image
+                  src={problemsMockup.imageUrl}
+                  alt={problemsMockup.description}
+                  width={1200}
+                  height={600}
+                  className="w-full h-auto object-cover"
+                  data-ai-hint={problemsMockup.imageHint}
+                />
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
