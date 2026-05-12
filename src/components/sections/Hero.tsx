@@ -39,7 +39,7 @@ export default function Hero() {
           <Button 
             asChild
             size="lg"
-            className="gold-gradient text-background hover:scale-105 transition-transform duration-300 font-bold py-8 px-12 text-xl md:text-2xl rounded-xl shadow-[0_10px_40px_rgba(201,169,97,0.4)]"
+            className="gold-gradient text-background hover:scale-105 transition-transform duration-300 font-bold py-6 px-12 text-xl md:text-2xl rounded-xl shadow-[0_10px_40px_rgba(201,169,97,0.4)]"
           >
             <a href="#pricing">GARANTIR MEU ACESSO</a>
           </Button>
