@@ -43,7 +43,7 @@ export default function Hero() {
           >
             <a href="#pricing">GARANTIR MEU ACESSO</a>
           </Button>
-          <p className="text-primary text-sm font-semibold tracking-widest uppercase">
+          <p className="text-primary text-xs font-semibold tracking-widest uppercase">
             ★ ACESSO IMEDIATO · 7 DIAS DE GARANTIA ★
           </p>
         </div>
