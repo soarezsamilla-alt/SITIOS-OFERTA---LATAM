@@ -22,32 +22,16 @@ const problems = [
 ];
 
 export default function Problems() {
-  const problemsMockup = PlaceHolderImages.find(img => img.id === 'problems-mockup');
-
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Sua Terra Merece um <span className="text-primary italic">Plano Profissional</span>
           </h2>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-6">
+          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
             A maioria dos pequenos produtores rurais na América Latina opera muito abaixo do potencial por falta de um mapa claro.
           </p>
-
-          {problemsMockup && (
-            <div className="max-w-xl mx-auto mb-8 animate-soft-float">
-              <Image
-                src={problemsMockup.imageUrl}
-                alt={problemsMockup.description}
-                width={800}
-                height={450}
-                className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
-                data-ai-hint={problemsMockup.imageHint}
-                priority
-              />
-            </div>
-          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
