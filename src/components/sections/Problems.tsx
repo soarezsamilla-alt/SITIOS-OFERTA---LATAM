@@ -27,16 +27,16 @@ export default function Problems() {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Sua Terra Merece um <span className="text-primary italic">Plano Profissional</span>
           </h2>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-12">
+          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-6">
             A maioria dos pequenos produtores rurais na América Latina opera muito abaixo do potencial por falta de um mapa claro.
           </p>
 
           {problemsMockup && (
-            <div className="max-w-xl mx-auto mb-20 animate-soft-float">
+            <div className="max-w-xl mx-auto mb-8 animate-soft-float">
               <Image
                 src={problemsMockup.imageUrl}
                 alt={problemsMockup.description}
