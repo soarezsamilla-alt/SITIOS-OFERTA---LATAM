@@ -66,10 +66,41 @@ const benefits = [
 export default function Benefits() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  
+  // Drag-to-scroll state
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeftPos, setScrollLeftPos] = useState(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeftPos(scrollRef.current.scrollLeft);
+    // Disable snapping temporarily for smoother drag
+    scrollRef.current.style.scrollSnapType = 'none';
+  };
+
+  const handleMouseLeaveOrUp = () => {
+    if (!isDragging) return;
+    setIsDragging(false);
+    if (scrollRef.current) {
+      // Re-enable snapping
+      scrollRef.current.style.scrollSnapType = 'x mandatory';
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed multiplier
+    scrollRef.current.scrollLeft = scrollLeftPos - walk;
+  };
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const cardWidth = scrollRef.current.querySelector('.benefit-card')?.clientWidth || 320;
+      const cardWidth = scrollRef.current.querySelector('.benefit-card')?.clientWidth || 420;
       const gap = 20;
       const scrollAmount = direction === 'left' ? -(cardWidth + gap) : (cardWidth + gap);
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
@@ -80,7 +111,7 @@ export default function Benefits() {
     const handleScroll = () => {
       if (scrollRef.current) {
         const scrollPosition = scrollRef.current.scrollLeft;
-        const cardWidth = scrollRef.current.querySelector('.benefit-card')?.clientWidth || 320;
+        const cardWidth = scrollRef.current.querySelector('.benefit-card')?.clientWidth || 420;
         const gap = 20;
         const index = Math.round(scrollPosition / (cardWidth + gap));
         setActiveIndex(index);
@@ -96,7 +127,7 @@ export default function Benefits() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (scrollRef.current) {
+      if (scrollRef.current && !isDragging) {
         const isAtEnd = scrollRef.current.scrollLeft + scrollRef.current.offsetWidth >= scrollRef.current.scrollWidth - 10;
         if (isAtEnd) {
           scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
@@ -106,7 +137,7 @@ export default function Benefits() {
       }
     }, 10000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isDragging]);
 
   return (
     <section className="py-24 bg-background overflow-hidden border-t border-border/30">
@@ -143,16 +174,23 @@ export default function Benefits() {
           {/* Carousel */}
           <div 
             ref={scrollRef}
-            className="flex gap-5 overflow-x-auto carousel-hide-scrollbar snap-x snap-mandatory py-10"
+            className={cn(
+              "flex gap-5 overflow-x-auto carousel-hide-scrollbar snap-x snap-mandatory py-10 select-none",
+              isDragging ? "cursor-grabbing" : "cursor-grab"
+            )}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseLeaveOrUp}
+            onMouseLeave={handleMouseLeaveOrUp}
+            onMouseMove={handleMouseMove}
           >
             {benefits.map((benefit, idx) => (
               <div 
                 key={idx} 
-                className="benefit-card flex-none w-[90%] sm:w-[360px] md:w-[320px] snap-start"
+                className="benefit-card flex-none w-[90%] sm:w-[450px] md:w-[480px] snap-start"
               >
-                <div className="bg-[#0F2F1E] border border-primary/40 rounded-[16px] overflow-hidden flex flex-col h-full hover:translate-y-[-8px] hover:shadow-[0_10px_30px_rgba(201,169,97,0.3)] transition-all duration-300">
+                <div className="bg-[#0F2F1E] border border-primary/40 rounded-[16px] overflow-hidden flex flex-col h-full hover:translate-y-[-8px] hover:shadow-[0_10px_30px_rgba(201,169,97,0.3)] transition-all duration-300 pointer-events-none">
                   {/* Image Placeholder - 60% approx height */}
-                  <div className="relative h-[200px] w-full gold-gradient flex items-center justify-center p-6 text-center rounded-t-[16px]">
+                  <div className="relative h-[180px] w-full gold-gradient flex items-center justify-center p-6 text-center rounded-t-[16px]">
                     <div className="absolute inset-0 bg-black/20" />
                     <span className="relative z-10 text-[#0F2F1E] font-bold text-sm uppercase tracking-tighter">
                       IMAGEM EM BREVE<br/>
@@ -183,12 +221,19 @@ export default function Benefits() {
           {/* Indicators */}
           <div className="flex justify-center gap-2 mt-4">
             {benefits.map((_, idx) => (
-              <div 
+              <button 
                 key={idx}
                 className={cn(
                   "h-1.5 transition-all duration-300 rounded-full",
                   activeIndex === idx ? "w-8 bg-primary" : "w-1.5 bg-primary/30"
                 )}
+                onClick={() => {
+                  if (scrollRef.current) {
+                    const cardWidth = scrollRef.current.querySelector('.benefit-card')?.clientWidth || 480;
+                    const gap = 20;
+                    scrollRef.current.scrollTo({ left: idx * (cardWidth + gap), behavior: 'smooth' });
+                  }
+                }}
               />
             ))}
           </div>
