@@ -12,7 +12,7 @@ export default function Hero() {
           Edição Premium 2026
         </p>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight max-w-5xl mx-auto">
+        <h1 className="text-2xl font-bold text-white mb-8 leading-tight tracking-tight max-w-5xl mx-auto">
           +100 Projetos de Fazendas Produtivas <span className="text-primary italic">que transformam sua terra ociosa em fonte de renda mensal</span>
         </h1>
         
