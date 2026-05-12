@@ -1,4 +1,3 @@
-
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -75,7 +74,7 @@ export default function SamplesCarousel() {
         <div className="mt-16 bg-card p-8 rounded-2xl border-l-4 border-l-primary max-w-4xl mx-auto shadow-sm">
           <h4 className="text-xl font-bold text-foreground mb-3 font-headline">Observação Importante</h4>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas e designs profissionais.
+            Todos os +100 projetos seguem o mesmo padrão editorial premium que você vê nas amostras acima, com medidas visíveis, zonas identificadas e designs profissionais.
           </p>
         </div>
       </div>
