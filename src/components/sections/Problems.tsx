@@ -9,7 +9,7 @@ const problems = [
   },
   {
     title: 'Renda Vulnerável',
-    description: 'Depender de uma única fonte de produção é arriscado — mas diversificar exige planejamento que você não tem.'
+    description: 'Depender de uma única fonte de produção é arriscado, mas diversificar exige planejamento que você não tem.'
   },
   {
     title: 'Consultoria Cara',
