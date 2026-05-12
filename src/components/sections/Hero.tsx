@@ -13,7 +13,7 @@ export default function Hero() {
         </p>
         
         <h1 className="text-2xl font-bold text-white mb-8 leading-tight tracking-tight max-w-5xl mx-auto">
-          +100 Projetos de Fazendas Produtivas <span className="text-primary italic">que transformam sua terra ociosa em fonte de renda mensal</span>
+          +100 Projetos de Fazendas Produtivas que transformam <span className="text-primary italic">sua terra ociosa em fonte de renda mensal</span>
         </h1>
         
         <p className="text-base md:text-lg text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
