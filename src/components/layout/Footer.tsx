@@ -9,13 +9,6 @@ export default function Footer() {
         <p className="text-[10px] max-w-4xl mx-auto leading-relaxed mb-12 uppercase tracking-tighter">
           Este site não é afiliado ao Facebook, Instagram, Google ou qualquer outra plataforma. Os resultados apresentados dependem do esforço e aplicação prática do cliente. A compra inclui apenas os materiais digitais descritos nesta página.
         </p>
-        
-        <div className="border-t border-white/10 pt-10 flex flex-wrap justify-center gap-8 text-xs font-semibold tracking-widest uppercase">
-          <a href="#" className="hover:text-primary transition-colors">Termos e Condições</a>
-          <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-          <a href="#" className="hover:text-primary transition-colors">Política de Reembolso</a>
-          <a href="#" className="hover:text-primary transition-colors">Contato</a>
-        </div>
       </div>
     </footer>
   );
