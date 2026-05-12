@@ -43,7 +43,6 @@ export default function Pricing() {
             </div>
             
             <p className="text-primary font-bold tracking-widest uppercase text-xs mb-4">Plano Pro</p>
-            <h3 className="text-3xl font-headline font-bold mb-6">Pro</h3>
             
             <div className="w-full bg-destructive/10 border border-destructive/30 p-4 rounded-xl mb-8">
               <p className="text-destructive font-bold text-xs uppercase tracking-widest mb-3 flex items-center justify-center gap-2">
