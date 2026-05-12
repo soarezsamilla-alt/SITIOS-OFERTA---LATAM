@@ -6,15 +6,6 @@ export default function Footer() {
         <div className="text-3xl font-headline font-bold text-primary mb-2">Rural Planner</div>
         <p className="italic text-sm mb-10">Edição Premium 2026 · Todos os direitos reservados</p>
         
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-10 text-sm">
-          <a href="mailto:suporte@ruralplanner.com" className="hover:text-primary transition-colors flex items-center gap-2">
-            📧 suporte@ruralplanner.com
-          </a>
-          <a href="#" className="hover:text-primary transition-colors flex items-center gap-2">
-            💬 WhatsApp Suporte
-          </a>
-        </div>
-        
         <p className="text-[10px] max-w-4xl mx-auto leading-relaxed mb-12 uppercase tracking-tighter">
           Este site não é afiliado ao Facebook, Instagram, Google ou qualquer outra plataforma. Os resultados apresentados dependem do esforço e aplicação prática do cliente. A compra inclui apenas os materiais digitais descritos nesta página.
         </p>
