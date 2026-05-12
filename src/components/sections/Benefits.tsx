@@ -28,7 +28,7 @@ export default function Benefits() {
           </p>
 
           {problemsMockup && (
-            <div className="max-w-xl mx-auto mb-4 animate-soft-float">
+            <div className="max-w-md mx-auto mb-4 animate-soft-float">
               <Image
                 src={problemsMockup.imageUrl}
                 alt={problemsMockup.description}
