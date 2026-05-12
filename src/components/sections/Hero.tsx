@@ -8,26 +8,26 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 dark-green-gradient">
       <div className="container mx-auto px-4 text-center">
-        <p className="font-headline italic text-primary text-lg md:text-xl tracking-widest mb-6">
+        <p className="font-headline italic text-primary text-lg md:text-xl tracking-widest mb-4">
           Edição Premium 2026
         </p>
         
-        <h1 className="text-[27px] font-bold text-white mb-8 leading-tight tracking-tight max-w-5xl mx-auto">
+        <h1 className="text-[27px] font-bold text-white mb-4 leading-tight tracking-tight max-w-5xl mx-auto">
           <span className="text-primary italic">+100 Projetos de Fazendas Produtivas</span> que transformam sua terra ociosa em fonte de renda mensal
         </h1>
         
-        <p className="text-base md:text-lg text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+        <p className="text-base md:text-lg text-white/80 max-w-3xl mx-auto mb-6 leading-relaxed font-light">
           A biblioteca mais completa de projetos rurais da América Latina com +100 plantas profissionais com medidas reais, divisões estratégicas e designs prontos para executar.
         </p>
 
         {mockup && (
-          <div className="relative max-w-3xl mx-auto mb-12 group">
+          <div className="relative max-w-4xl mx-auto mb-6 group">
             <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             <Image
               src={mockup.imageUrl}
               alt={mockup.description}
-              width={800}
-              height={500}
+              width={1000}
+              height={625}
               className="relative drop-shadow-2xl mx-auto"
               data-ai-hint={mockup.imageHint}
               priority
