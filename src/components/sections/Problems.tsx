@@ -17,7 +17,7 @@ const problems = [
   },
   {
     title: 'Informação Dispersa',
-    description: 'Você busca referências no YouTube e fóruns — mas o que encontra é superficial, sem medidas e sem clareza.'
+    description: 'Você busca referências no YouTube e fóruns, mas o que encontra é superficial, sem medidas e sem clareza.'
   }
 ];
 
