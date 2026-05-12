@@ -71,7 +71,7 @@ export default function Benefits() {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const cardWidth = 340; // width + gap
+      const cardWidth = 470; // Novo width (450) + gap (20)
       const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
@@ -81,7 +81,7 @@ export default function Benefits() {
     const handleScroll = () => {
       if (scrollRef.current) {
         const scrollPosition = scrollRef.current.scrollLeft;
-        const cardWidth = 340;
+        const cardWidth = 470;
         const index = Math.round(scrollPosition / cardWidth);
         setActiveIndex(index);
       }
@@ -94,7 +94,6 @@ export default function Benefits() {
     return () => currentRef?.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Auto-play de 10 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       if (scrollRef.current) {
@@ -122,7 +121,6 @@ export default function Benefits() {
         </div>
 
         <div className="relative group max-w-7xl mx-auto">
-          {/* Navegação - Setas */}
           <Button 
             variant="ghost" 
             size="icon" 
@@ -141,7 +139,6 @@ export default function Benefits() {
             <ChevronRight className="h-12 w-12" />
           </Button>
 
-          {/* Carrossel */}
           <div 
             ref={scrollRef}
             className="flex gap-5 overflow-x-auto carousel-hide-scrollbar snap-x snap-mandatory py-10"
@@ -149,11 +146,10 @@ export default function Benefits() {
             {benefits.map((benefit, idx) => (
               <div 
                 key={idx} 
-                className="flex-none w-[280px] sm:w-[320px] snap-start"
+                className="flex-none w-[320px] sm:w-[450px] snap-start"
               >
                 <div className="bg-[#0F2F1E] border border-primary/40 rounded-[16px] overflow-hidden flex flex-col h-full hover:translate-y-[-8px] hover:shadow-[0_10px_30px_rgba(201,169,97,0.2)] transition-all duration-300">
-                  {/* Imagem Placeholder */}
-                  <div className="relative h-[200px] w-full gold-gradient flex items-center justify-center p-6 text-center">
+                  <div className="relative h-[140px] w-full gold-gradient flex items-center justify-center p-6 text-center">
                     <div className="absolute inset-0 bg-black/20" />
                     <span className="relative z-10 text-[#0F2F1E] font-bold text-sm uppercase tracking-tighter">
                       IMAGEM EM BREVE<br/>
@@ -161,15 +157,14 @@ export default function Benefits() {
                     </span>
                   </div>
 
-                  {/* Conteúdo do Card */}
-                  <div className="p-6 flex flex-col items-center text-center">
-                    <div className="font-headline font-bold text-primary text-[56px] leading-tight mb-4 mt-2">
+                  <div className="p-4 flex flex-col items-center text-center">
+                    <div className="font-headline font-bold text-primary text-[42px] md:text-[56px] leading-tight mb-2 mt-2">
                       {benefit.val}
                     </div>
-                    <h3 className="text-white font-bold uppercase tracking-[1px] text-base mb-3 font-body">
+                    <h3 className="text-white font-bold uppercase tracking-[1px] text-sm md:text-base mb-2 font-body">
                       {benefit.title}
                     </h3>
-                    <p className="text-white/75 text-sm leading-relaxed mb-4 font-body">
+                    <p className="text-white/75 text-xs md:text-sm leading-relaxed mb-4 font-body">
                       {benefit.desc}
                     </p>
                   </div>
@@ -178,7 +173,6 @@ export default function Benefits() {
             ))}
           </div>
 
-          {/* Indicadores (Dots) */}
           <div className="flex justify-center gap-2 mt-4">
             {benefits.map((_, idx) => (
               <div 
