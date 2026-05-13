@@ -60,7 +60,7 @@ export default function Bonus() {
                       src={imgData.imageUrl}
                       alt={bonus.title}
                       fill
-                      className="object-contain p-4"
+                      className="object-contain p-1"
                       data-ai-hint={imgData.imageHint}
                     />
                   )}
