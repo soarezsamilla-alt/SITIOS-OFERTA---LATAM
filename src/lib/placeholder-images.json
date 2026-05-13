@@ -83,6 +83,60 @@
       "description": "Technical Professional Plan Mockup",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778552394691-76f979f4-92b8-4995-8bce-ef884aa21ada.png",
       "imageHint": "technical drawing"
+    },
+    {
+      "id": "benefit-1",
+      "description": "Fazenda Latinoamericana Completa",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778632602834-6373b46f-433e-491b-8210-6f3d6084fa55.blob",
+      "imageHint": "farm layout"
+    },
+    {
+      "id": "benefit-2",
+      "description": "Mosaico de Tamanhos",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633127314-7fd02a0d-c94e-401b-9946-51302c2ad216.png",
+      "imageHint": "land size"
+    },
+    {
+      "id": "benefit-3",
+      "description": "Mosaico de Atividades",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633095997-a5df2437-4d40-4210-a80b-d35de01c0ed8.png",
+      "imageHint": "farming activities"
+    },
+    {
+      "id": "benefit-4",
+      "description": "Mapa Climático LATAM",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633259489-ddc30630-5ad6-4de5-b8e0-1ae6f9503f8c.png",
+      "imageHint": "climate map"
+    },
+    {
+      "id": "benefit-5",
+      "description": "Comparativo Agrônomo",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633352191-c563bcea-7b41-42c1-8fea-5634186d63b7.png",
+      "imageHint": "savings graph"
+    },
+    {
+      "id": "benefit-6",
+      "description": "Gráfico de Renda",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633579085-b86d0f1f-6f72-4f72-9e1a-3bd333cb5395.png",
+      "imageHint": "income chart"
+    },
+    {
+      "id": "benefit-7",
+      "description": "Selo de Qualidade",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633730749-0b454189-415e-4dcc-a4d8-ad5e2dae7f23.png",
+      "imageHint": "quality seal"
+    },
+    {
+      "id": "benefit-8",
+      "description": "Etapas de Execução",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633823088-c1269602-561a-477e-b83e-1631f4936ef6.png",
+      "imageHint": "steps guide"
+    },
+    {
+      "id": "benefit-9",
+      "description": "Biblioteca Digital",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778634178394-c642ee3b-b78b-4441-8b89-7d0564906527.png",
+      "imageHint": "digital library"
     }
   ]
 }
