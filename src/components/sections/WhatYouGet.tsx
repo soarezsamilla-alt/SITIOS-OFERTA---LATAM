@@ -1,32 +1,26 @@
-'use client';
 
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
+'use client';
 
 const categories = [
   {
     number: '50',
     title: 'Por Tamanho de Terreno',
     description: 'Projetos dimensionados para 0,5ha, 1ha, 2ha, 3ha e 5ha — 10 projetos para cada tamanho.',
-    imgId: 'benefit-2'
   },
   {
     number: '35',
     title: 'Por Vocação Produtiva',
     description: 'Café, hortifruti, piscicultura, pecuária leiteira, agrofloresta, avicultura, suínos e apicultura.',
-    imgId: 'benefit-3'
   },
   {
     number: '20',
     title: 'Por Região Climática',
     description: 'Tropical Úmido, Savana Tropical, Zona Semiárida, Zona Temperada e Zona Andina — adaptados ao seu clima e país.',
-    imgId: 'benefit-4'
   },
   {
     number: '10',
     title: 'Projetos Especiais',
     description: 'Orgânico certificado, permacultura, agroturismo, agroindústria caseira, energia renovável e mais.',
-    imgId: 'benefit-9'
   }
 ];
 
@@ -45,7 +39,6 @@ export default function WhatYouGet() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[30px]">
           {categories.map((item, idx) => {
-            const imageData = PlaceHolderImages.find(img => img.id === item.imgId);
             return (
               <div 
                 key={idx}
@@ -59,22 +52,9 @@ export default function WhatYouGet() {
                   {item.title}
                 </h3>
                 
-                <p className="text-[15px] font-body text-[#6B6B6B] leading-[1.6] mb-8">
+                <p className="text-[15px] font-body text-[#6B6B6B] leading-[1.6]">
                   {item.description}
                 </p>
-
-                <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mt-auto">
-                  {imageData && (
-                    <Image
-                      src={imageData.imageUrl}
-                      alt={imageData.description}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={imageData.imageHint}
-                      sizes="(max-width: 600px) 100vw, (max-width: 968px) 50vw, 25vw"
-                    />
-                  )}
-                </div>
               </div>
             );
           })}
