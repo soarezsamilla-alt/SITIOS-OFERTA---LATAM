@@ -54,13 +54,13 @@ export default function Bonus() {
                 <div className="bg-secondary text-primary px-4 py-2 text-xs font-bold tracking-widest text-center">
                   {bonus.badge}
                 </div>
-                <div className="relative h-48 gold-gradient">
+                <div className="relative h-56 bg-secondary/10">
                   {imgData && (
                     <Image
                       src={imgData.imageUrl}
                       alt={bonus.title}
                       fill
-                      className="object-cover"
+                      className="object-contain p-4"
                       data-ai-hint={imgData.imageHint}
                     />
                   )}
