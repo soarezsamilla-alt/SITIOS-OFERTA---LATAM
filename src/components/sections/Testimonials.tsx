@@ -8,6 +8,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
   type CarouselApi,
 } from "@/components/ui/carousel";
 
@@ -45,7 +47,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-12 md:px-16">
           <Carousel
             setApi={setApi}
             opts={{
@@ -75,6 +77,8 @@ export default function Testimonials() {
                 );
               })}
             </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-10 text-primary border-primary/20 hover:bg-primary/10" />
+            <CarouselNext className="hidden md:flex -right-10 text-primary border-primary/20 hover:bg-primary/10" />
           </Carousel>
         </div>
       </div>
