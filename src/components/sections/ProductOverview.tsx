@@ -1,4 +1,3 @@
-
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -8,7 +7,7 @@ export default function ProductOverview() {
   const mockup = PlaceHolderImages.find(img => img.id === 'problems-mockup');
 
   return (
-    <section className="pt-12 pb-0 bg-background overflow-hidden">
+    <section className="pt-8 pb-0 bg-background overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
           Conheça o Material <span className="text-primary italic">+100 Projetos</span>

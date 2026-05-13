@@ -65,8 +65,8 @@ export default function Benefits() {
   const infiniteBenefits = [...benefits, ...benefits];
 
   return (
-    <section className="pt-24 pb-24 bg-background overflow-hidden border-t border-border/30">
-      <div className="container mx-auto px-4 mb-16">
+    <section className="pt-12 pb-12 bg-background overflow-hidden border-t border-border/30">
+      <div className="container mx-auto px-4 mb-10">
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Projetos Altamente Dimensionados, <span className="text-primary italic">Não Ideias Vagas</span>

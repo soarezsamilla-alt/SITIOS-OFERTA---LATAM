@@ -30,7 +30,7 @@ export default function LandingPage() {
       <Pricing />
       
       {/* Guarantee Section - Redesigned as a card */}
-      <section className="py-16 bg-background">
+      <section className="py-8 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-card border-2 border-primary/20 rounded-[2rem] p-6 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.2)] relative overflow-hidden">
             {/* Decorative background elements */}

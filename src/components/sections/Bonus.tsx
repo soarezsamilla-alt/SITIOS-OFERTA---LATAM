@@ -1,4 +1,3 @@
-
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -37,9 +36,9 @@ const bonuses = [
 
 export default function Bonus() {
   return (
-    <section className="py-24 bg-accent/5">
+    <section className="py-12 bg-accent/5">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Você Produtor <span className="text-primary italic">Merece Ainda Mais</span>
           </h2>
@@ -79,7 +78,7 @@ export default function Bonus() {
                   </div>
                   <div className="flex flex-col items-center justify-center gap-0.5 mt-2">
                     <span className="text-white/30 line-through text-[10px]">{bonus.oldPrice}</span>
-                    <span className="text-primary font-bold text-xl tracking-tight">GRÁTIS</span>
+                    <span className="text-primary font-bold text-sm tracking-tight">GRÁTIS</span>
                   </div>
                 </div>
               </div>

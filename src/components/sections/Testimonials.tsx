@@ -1,4 +1,3 @@
-
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -36,9 +35,9 @@ export default function Testimonials() {
   }, [api]);
 
   return (
-    <section className="py-20 bg-background overflow-hidden border-t border-border/30">
+    <section className="py-12 bg-background overflow-hidden border-t border-border/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Quem Comprou, <span className="text-primary italic">Recomenda</span>
           </h2>

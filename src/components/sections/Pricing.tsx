@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -24,9 +23,9 @@ export default function Pricing() {
   }, []);
 
   return (
-    <section id="pricing" className="py-24 bg-secondary/10">
+    <section id="pricing" className="py-12 bg-secondary/10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             Garanta Agora com <span className="text-primary italic">Preço Especial</span>
           </h2>

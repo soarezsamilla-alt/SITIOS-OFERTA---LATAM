@@ -6,7 +6,7 @@ export default function Hero() {
   const mockup = PlaceHolderImages.find(img => img.id === 'hero-mockup');
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 dark-green-gradient">
+    <section className="relative overflow-hidden pt-8 pb-12 md:pt-12 md:pb-20 dark-green-gradient">
       <div className="container mx-auto px-4 text-center">
         <p className="font-headline italic text-primary text-lg md:text-xl tracking-widest mb-4 animate-soft-float">
           Edição Premium 2026
