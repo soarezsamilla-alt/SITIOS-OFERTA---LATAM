@@ -174,6 +174,12 @@
       "description": "Depoimento real 06",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778636394813-07c11f56-46b7-49a5-9834-4f24846eeb3e.png",
       "imageHint": "client testimonial"
+    },
+    {
+      "id": "creator-photo",
+      "description": "Foto de Alejandro Martínez",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778714848819-60a6bb5e-390a-4372-8731-66d19e3ed55b.png",
+      "imageHint": "man portrait"
     }
   ]
 }
