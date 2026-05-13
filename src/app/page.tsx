@@ -7,6 +7,7 @@ import WhatYouGet from '@/components/sections/WhatYouGet';
 import Bonus from '@/components/sections/Bonus';
 import Pricing from '@/components/sections/Pricing';
 import Testimonials from '@/components/sections/Testimonials';
+import AboutCreator from '@/components/sections/AboutCreator';
 import FAQ from '@/components/sections/FAQ';
 import Footer from '@/components/layout/Footer';
 import { ShieldCheck } from 'lucide-react';
@@ -26,13 +27,14 @@ export default function LandingPage() {
       <Benefits />
       <WhatYouGet />
       <Testimonials />
+      <AboutCreator />
       <Bonus />
       <Pricing />
       
       {/* Guarantee Section - Redesigned as a card */}
       <section className="py-6 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto bg-card border-2 border-primary/20 rounded-[2rem] p-5 md:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.2)] relative overflow-hidden">
+          <div className="max-w-2xl mx-auto bg-card border-2 border-primary/20 rounded-[2rem] p-5 md:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.2)] relative overflow-hidden">
             {/* Decorative background elements */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/5 rounded-full blur-3xl"></div>
