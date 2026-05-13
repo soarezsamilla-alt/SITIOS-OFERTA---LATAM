@@ -5,7 +5,7 @@ const categories = [
   {
     number: '50',
     title: 'Por Tamanho de Terreno',
-    description: 'Projetos dimensionados para 0,5ha, 1ha, 2ha, 3ha e 5ha — 10 projetos para cada tamanho.',
+    description: 'Projetos dimensionados para 0,5ha, 1ha, 2ha, 3ha e 5ha, 10 projetos para cada tamanho.',
   },
   {
     number: '35',
