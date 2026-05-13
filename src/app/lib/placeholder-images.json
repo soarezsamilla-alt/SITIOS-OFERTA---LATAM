@@ -138,6 +138,42 @@
       "description": "Biblioteca Digital",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778634178394-c642ee3b-b78b-4441-8b89-7d0564906527.png",
       "imageHint": "digital library"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Depoimento real 01",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778637463831-fff617a2-1307-4006-b7a7-2b35037e57c7.png",
+      "imageHint": "customer review"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Depoimento real 02",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778637789011-de4100ad-82ff-401f-be3d-d381a3f5679e.png",
+      "imageHint": "user feedback"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Depoimento real 03",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778638049492-5c823441-bc0b-4efb-9a58-f3a4bc8b0bcc.png",
+      "imageHint": "verified purchase"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Depoimento real 04",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778636217662-148f37cc-1c82-403e-b5b2-382b7420f389.png",
+      "imageHint": "success story"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Depoimento real 05",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778636316874-a0464222-93ee-420e-a099-ef453dbea104.png",
+      "imageHint": "happy customer"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Depoimento real 06",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778636394813-07c11f56-46b7-49a5-9834-4f24846eeb3e.png",
+      "imageHint": "client testimonial"
     }
   ]
 }
