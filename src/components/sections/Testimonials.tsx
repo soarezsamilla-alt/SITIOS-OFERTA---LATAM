@@ -30,7 +30,7 @@ export default function Testimonials() {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 4000); // Pausa de 4 segundos entre as transições
+    }, 5000); // Pausa de 5 segundos entre as transições
 
     return () => clearInterval(interval);
   }, [api]);
@@ -43,11 +43,11 @@ export default function Testimonials() {
             Quem Comprou, <span className="text-primary italic">Recomenda</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Veja o que produtores rurais que já estão utilizando dizem sobre o material através de resultados reais e feedback direto.
+            Veja os resultados reais e o feedback de produtores que já utilizam o Rural Planner.
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto px-12 md:px-16">
+        <div className="max-w-6xl mx-auto relative px-8">
           <Carousel
             setApi={setApi}
             opts={{
@@ -70,15 +70,21 @@ export default function Testimonials() {
                         fill
                         className="rounded-xl object-contain pointer-events-none"
                         data-ai-hint={imageData.imageHint}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 20vw"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 25vw, 20vw"
                       />
                     </div>
                   </CarouselItem>
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-10 text-primary border-primary/20 hover:bg-primary/10" />
-            <CarouselNext className="hidden md:flex -right-10 text-primary border-primary/20 hover:bg-primary/10" />
+            
+            {/* Setas de navegação visíveis e posicionadas */}
+            <div className="absolute -left-4 md:-left-8 top-1/2 -translate-y-1/2 z-10">
+              <CarouselPrevious className="static translate-y-0 text-primary border-primary/30 hover:bg-primary/10 h-10 w-10 md:h-12 md:w-12" />
+            </div>
+            <div className="absolute -right-4 md:-right-8 top-1/2 -translate-y-1/2 z-10">
+              <CarouselNext className="static translate-y-0 text-primary border-primary/30 hover:bg-primary/10 h-10 w-10 md:h-12 md:w-12" />
+            </div>
           </Carousel>
         </div>
       </div>
