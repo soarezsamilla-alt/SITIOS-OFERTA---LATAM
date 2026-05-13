@@ -25,7 +25,7 @@ export default function AboutCreator() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 items-stretch">
           
           {/* Card 1: Sobre o Criador */}
-          <div className="bg-[#F5F0E1] rounded-[10px] p-3 border-t-2 border-t-[#C9A961] border-x border-b border-[#C9A961]/10 shadow-sm transition-all duration-300 hover:-translate-y-1 flex flex-col items-center">
+          <div className="bg-secondary/20 rounded-[10px] p-3 border-t-2 border-t-[#C9A961] border-x border-b border-[#C9A961]/10 shadow-sm transition-all duration-300 hover:-translate-y-1 flex flex-col items-center">
             <div className="text-center mb-2">
               <span className="text-[#C9A961] text-[7px] font-bold tracking-[0.15em] uppercase">SOBRE O CRIADOR</span>
               <div className="w-6 h-[1px] bg-[#C9A961] mx-auto mt-0.5"></div>
@@ -50,40 +50,40 @@ export default function AboutCreator() {
               </div>
             </div>
 
-            <h3 className="text-base font-headline font-bold text-[#1B4D2E] mb-0">Alejandro Martínez</h3>
+            <h3 className="text-base font-headline font-bold text-white mb-0">Alejandro Martínez</h3>
             <p className="text-[#C9A961] italic text-[10px] mb-2">Fundador & Criador</p>
 
-            <p className="text-[#4A4A4A] text-center text-[10px] leading-relaxed mb-3 max-w-[240px]">
-              Engenheiro agrônomo com 15 anos de experiência em planejamento rural na América Latina. Visitou mais de 3.000 fincas democratizando o conhecimento profissional.
+            <p className="text-white/70 text-center text-[10px] leading-relaxed mb-3 max-w-[240px]">
+              Engenheiro agrônomo com mais de 15 anos de experiência em planejamento rural em toda América Latina. Já visitou mais de 3.000 fincas em 8 países do México à Argentina, da Colômbia ao Chile. Sua missão é democratizar o conhecimento rural profissional.
             </p>
 
             {/* Números Destacados - Ultra compactos */}
             <div className="w-full pt-2 border-t border-[#C9A961]/10 flex justify-around gap-1 mt-auto">
               <div className="text-center">
                 <div className="text-sm font-headline font-bold text-[#C9A961]">15+</div>
-                <div className="text-[6px] uppercase text-[#6B6B6B] leading-tight">anos exp.</div>
+                <div className="text-[6px] uppercase text-white/50 leading-tight">anos exp.</div>
               </div>
               <div className="text-center">
                 <div className="text-sm font-headline font-bold text-[#C9A961]">3k+</div>
-                <div className="text-[6px] uppercase text-[#6B6B6B] leading-tight">fincas</div>
+                <div className="text-[6px] uppercase text-white/50 leading-tight">fincas</div>
               </div>
               <div className="text-center">
                 <div className="text-sm font-headline font-bold text-[#C9A961]">12 mil</div>
-                <div className="text-[6px] uppercase text-[#6B6B6B] leading-tight">produtores</div>
+                <div className="text-[6px] uppercase text-white/50 leading-tight">produtores</div>
               </div>
             </div>
           </div>
 
           {/* Card 2: Como você recebe */}
-          <div className="bg-[#F5F0E1] rounded-[10px] p-3 border-t-2 border-t-[#C9A961] border-x border-b border-[#C9A961]/10 shadow-sm transition-all duration-300 hover:-translate-y-1 flex flex-col items-center">
+          <div className="bg-secondary/20 rounded-[10px] p-3 border-t-2 border-t-[#C9A961] border-x border-b border-[#C9A961]/10 shadow-sm transition-all duration-300 hover:-translate-y-1 flex flex-col items-center">
             <div className="text-center mb-2">
               <span className="text-[#C9A961] text-[7px] font-bold tracking-[0.15em] uppercase">COMO VOCÊ RECEBE</span>
               <div className="w-6 h-[1px] bg-[#C9A961] mx-auto mt-0.5"></div>
             </div>
 
-            <h3 className="text-base font-headline font-bold text-[#1B4D2E] mb-2 text-center">Acesso Rápido</h3>
+            <h3 className="text-base font-headline font-bold text-white mb-2 text-center">Acesso Rápido</h3>
 
-            <div className="mb-2 p-2 bg-white/50 rounded-lg">
+            <div className="mb-2 p-2 bg-white/5 rounded-lg">
               <PackageCheck size={30} className="text-[#C9A961]" />
             </div>
 
@@ -96,12 +96,12 @@ export default function AboutCreator() {
                 { title: "Grátis", desc: "Atualizações inclusas pra sempre.", icon: "4" }
               ].map((step, idx) => (
                 <div key={idx} className="flex gap-2 items-center">
-                  <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#C9A961] flex items-center justify-center text-white text-[9px] font-bold shadow-sm">
+                  <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#C9A961] flex items-center justify-center text-secondary text-[9px] font-bold shadow-sm">
                     {step.icon}
                   </div>
                   <div>
-                    <h4 className="text-[#1B4D2E] font-bold text-[10px] leading-tight">{step.title}</h4>
-                    <p className="text-[#6B6B6B] text-[8px] leading-tight">{step.desc}</p>
+                    <h4 className="text-white font-bold text-[10px] leading-tight">{step.title}</h4>
+                    <p className="text-white/60 text-[8px] leading-tight">{step.desc}</p>
                   </div>
                 </div>
               ))}
