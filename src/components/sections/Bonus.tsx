@@ -50,11 +50,11 @@ export default function Bonus() {
           {bonuses.map((bonus, idx) => {
             const imgData = PlaceHolderImages.find(img => img.id === bonus.id);
             return (
-              <div key={idx} className="bg-[#1C1917] rounded-2xl overflow-hidden shadow-2xl hover:translate-y-[-8px] transition-transform duration-300 border border-primary/20">
-                <div className="bg-primary text-secondary px-4 py-2 text-[10px] font-bold tracking-[0.2em] text-center">
+              <div key={idx} className="bg-[#1C1917] rounded-2xl overflow-hidden shadow-2xl hover:translate-y-[-8px] transition-transform duration-300 border border-primary/20 flex flex-col">
+                <div className="bg-primary text-secondary px-4 py-1.5 text-[9px] font-bold tracking-[0.2em] text-center uppercase">
                   {bonus.badge}
                 </div>
-                <div className="relative h-80 bg-white/5">
+                <div className="relative h-64 bg-white/5">
                   {imgData && (
                     <Image
                       src={imgData.imageUrl}
@@ -65,12 +65,14 @@ export default function Bonus() {
                     />
                   )}
                 </div>
-                <div className="p-8 text-center">
-                  <h3 className="text-xl font-bold mb-3 text-white">{bonus.title}</h3>
-                  <p className="text-white/60 text-sm mb-6 leading-relaxed">{bonus.desc}</p>
-                  <div className="flex flex-col items-center justify-center gap-1">
-                    <span className="text-white/30 line-through text-xs">{bonus.oldPrice}</span>
-                    <span className="text-primary font-bold text-2xl tracking-tight">GRÁTIS</span>
+                <div className="p-6 text-center flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold mb-2 text-white leading-tight">{bonus.title}</h3>
+                    <p className="text-white/60 text-xs mb-4 leading-relaxed line-clamp-3">{bonus.desc}</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-0.5 mt-2">
+                    <span className="text-white/30 line-through text-[10px]">{bonus.oldPrice}</span>
+                    <span className="text-primary font-bold text-xl tracking-tight">GRÁTIS</span>
                   </div>
                 </div>
               </div>
