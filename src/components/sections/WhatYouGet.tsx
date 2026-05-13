@@ -42,17 +42,17 @@ export default function WhatYouGet() {
             return (
               <div 
                 key={idx}
-                className="bg-card border-t-4 border-t-[#C9A961] rounded-[12px] p-10 md:p-8 flex flex-col items-center text-center shadow-[0_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition-transform duration-300"
+                className="bg-card border-t-4 border-t-[#C9A961] rounded-[12px] p-6 flex flex-col items-center text-center shadow-[0_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition-transform duration-300"
               >
-                <div className="text-[64px] md:text-[80px] font-bold font-headline text-[#C9A961] leading-none mb-4">
+                <div className="text-[64px] md:text-[72px] font-bold font-headline text-[#C9A961] leading-none mb-2">
                   {item.number}
                 </div>
                 
-                <h3 className="text-[22px] font-bold font-headline text-[#1B4D2E] mb-4 leading-tight">
+                <h3 className="text-[20px] font-bold font-headline text-[#1B4D2E] mb-2 leading-tight">
                   {item.title}
                 </h3>
                 
-                <p className="text-[15px] font-body text-[#6B6B6B] leading-[1.6]">
+                <p className="text-[14px] font-body text-[#6B6B6B] leading-[1.5]">
                   {item.description}
                 </p>
               </div>
