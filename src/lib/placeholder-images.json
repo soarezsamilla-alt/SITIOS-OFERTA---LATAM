@@ -44,26 +44,26 @@
     },
     {
       "id": "bonus-construction",
-      "description": "Pack of Rural Constructions",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776989218853-f672d256-fd60-4ebb-b93b-cca55d24834e.png",
+      "description": "Pack de Construções Rurais",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778708498997-909c3bb7-d6a5-451b-aae8-361829bdc57b.png",
       "imageHint": "farm building"
     },
     {
       "id": "bonus-roi",
-      "description": "ROI Calculator",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776989637233-2138a66b-6e74-47b8-a310-c769cbab9ee0.png",
+      "description": "Calculadora de ROI Produtivo",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778708592292-d69dcd67-da1e-49dc-a814-c95be8241257.png",
       "imageHint": "financial calculator"
     },
     {
       "id": "bonus-plants",
-      "description": "Companion Plants Guide",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776990091189-1a18ba2f-aa5c-4303-891c-4955928f4b36.png",
+      "description": "Guia de Plantas Companheiras",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778708657138-3090dbff-87bd-4e59-831d-4a3b3104c2ce.png",
       "imageHint": "green plants"
     },
     {
       "id": "bonus-solar",
-      "description": "Rural Solar Energy Manual",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1776991160600-6a1cc239-e622-4e95-b2d9-96f749ca331c.png",
+      "description": "Manual de Energia Solar Rural",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778708753144-b30c6428-801f-44b7-a6a1-cb64224e54e4.png",
       "imageHint": "solar panel"
     },
     {
