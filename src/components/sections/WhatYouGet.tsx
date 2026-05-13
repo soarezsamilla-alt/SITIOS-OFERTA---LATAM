@@ -52,7 +52,7 @@ export default function WhatYouGet() {
                   {item.title}
                 </h3>
                 
-                <p className="text-[14px] font-body text-[#635d55] leading-[1.5]">
+                <p className="text-[14px] font-body text-white/60 leading-[1.5]">
                   {item.description}
                 </p>
               </div>
