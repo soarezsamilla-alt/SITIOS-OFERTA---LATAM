@@ -32,7 +32,7 @@ export default function Testimonials() {
             if (!imageData) return null;
             
             return (
-              <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border border-border/50 hover:scale-[1.02] transition-transform duration-300">
+              <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl border border-border/50 hover:scale-[1.02] transition-transform duration-300 bg-secondary/10">
                 <Image
                   src={imageData.imageUrl}
                   alt={imageData.description}
