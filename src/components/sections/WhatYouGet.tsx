@@ -15,7 +15,7 @@ const categories = [
   {
     number: '20',
     title: 'Por Região Climática',
-    description: 'Tropical Úmido, Savana Tropical, Zona Semiárida, Zona Temperada e Zona Andina — adaptados ao seu clima e país.',
+    description: 'Projetos dimensionados para: Tropical Úmido, Savana Tropical, Zona Semiárida, Zona Temperada e Zona Andina, adaptados ao seu clima e país.',
   },
   {
     number: '10',
