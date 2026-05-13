@@ -28,11 +28,11 @@ export default function LandingPage() {
         <Benefits />
         <WhatYouGet />
         <Testimonials />
+        <Bonus />
         <div className="pt-12">
           <Pricing />
         </div>
         <AboutCreator />
-        <Bonus />
         <FAQ />
       </div>
       <Footer />
