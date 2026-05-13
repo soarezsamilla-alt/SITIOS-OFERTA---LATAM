@@ -56,18 +56,18 @@ export default function SalesNotification() {
         visible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0 pointer-events-none"
       )}
     >
-      <div className="bg-white/95 backdrop-blur-sm border border-primary/20 shadow-2xl rounded-2xl p-4 flex items-center gap-4 max-w-[280px]">
-        <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-          <ShoppingCart className="w-5 h-5 text-primary" />
+      <div className="bg-secondary/95 backdrop-blur-md border border-primary/30 shadow-2xl rounded-xl p-2.5 flex items-center gap-3 max-w-[220px]">
+        <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 border border-primary/20">
+          <ShoppingCart className="w-4 h-4 text-primary" />
         </div>
-        <div className="flex flex-col">
-          <p className="text-[12px] text-zinc-900 leading-tight">
-            <span className="font-bold">{person.name}</span> de {person.city}, {person.country}
+        <div className="flex flex-col min-w-0">
+          <p className="text-[10px] text-white leading-tight truncate">
+            <span className="font-bold">{person.name}</span> de {person.city}
           </p>
-          <p className="text-[10px] text-zinc-500 font-medium">
+          <p className="text-[9px] text-white/70 font-medium truncate">
             Acaba de comprar el <span className="text-primary font-bold">Rural Planner</span>
           </p>
-          <p className="text-[8px] text-primary/70 mt-1 uppercase tracking-tighter font-bold">
+          <p className="text-[7px] text-primary/70 mt-0.5 uppercase tracking-tighter font-bold">
             Hace unos segundos
           </p>
         </div>
