@@ -41,7 +41,7 @@ export default function Hero() {
             size="lg"
             className="gold-gradient text-background hover:scale-105 transition-transform duration-300 font-bold py-6 px-12 text-xl md:text-2xl rounded-xl shadow-[0_10px_40px_rgba(201,169,97,0.4)]"
           >
-            <a href="#pricing">QUIERO TRANSFORMAR MI FINCA</a>
+            <a href="#pricing">ASEGURAR MI ACCESO YA</a>
           </Button>
           <p className="text-primary text-[10px] font-semibold tracking-widest uppercase">
             ★ ACESSO IMEDIATO · 7 DIAS DE GARANTIA ★
