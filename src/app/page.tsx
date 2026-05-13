@@ -10,6 +10,7 @@ import Testimonials from '@/components/sections/Testimonials';
 import AboutCreator from '@/components/sections/AboutCreator';
 import FAQ from '@/components/sections/FAQ';
 import Footer from '@/components/layout/Footer';
+import SalesNotification from '@/components/ui/SalesNotification';
 
 export default function LandingPage() {
   return (
@@ -27,14 +28,17 @@ export default function LandingPage() {
         <Benefits />
         <WhatYouGet />
         <Testimonials />
-        <Bonus />
         <div className="pt-12">
           <Pricing />
         </div>
         <AboutCreator />
+        <Bonus />
         <FAQ />
       </div>
       <Footer />
+      
+      {/* Social Proof Popup */}
+      <SalesNotification />
     </main>
   );
 }
