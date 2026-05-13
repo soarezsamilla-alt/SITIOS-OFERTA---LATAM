@@ -26,20 +26,20 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {testimonialIds.map((id, idx) => {
             const imageData = PlaceHolderImages.find(img => img.id === id);
             if (!imageData) return null;
             
             return (
-              <div key={idx} className="transition-transform duration-300 hover:scale-[1.03] flex justify-center">
-                <div className="relative w-full max-w-[220px]">
+              <div key={idx} className="transition-transform duration-300 hover:scale-[1.02] flex justify-center">
+                <div className="relative w-full max-w-[320px]">
                   <Image
                     src={imageData.imageUrl}
                     alt={imageData.description}
-                    width={400}
-                    height={700}
-                    className="w-full h-auto drop-shadow-xl rounded-lg"
+                    width={500}
+                    height={875}
+                    className="w-full h-auto drop-shadow-2xl rounded-xl"
                     data-ai-hint={imageData.imageHint}
                     style={{ height: 'auto', width: '100%' }}
                   />
