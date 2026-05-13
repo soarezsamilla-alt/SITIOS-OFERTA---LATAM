@@ -27,9 +27,9 @@ export default function LandingPage() {
       <Benefits />
       <WhatYouGet />
       <Testimonials />
-      <AboutCreator />
       <Bonus />
       <Pricing />
+      <AboutCreator />
       
       {/* Guarantee Section - Redesigned as a card */}
       <section className="py-6 bg-background">
