@@ -8,28 +8,28 @@ const bonuses = [
     badge: 'BÔNUS 01',
     title: 'Pack de Construções Rurais',
     desc: '10 plantas prontas de galinheiros, pocilgas, estábulos e tanques com medidas e materiais.',
-    oldPrice: 'R$ 17,00'
+    oldPrice: '$ 17,00'
   },
   {
     id: 'bonus-roi',
     badge: 'BÔNUS 02',
     title: 'Calculadora de ROI Produtivo',
     desc: 'Calculadora editável que mostra o retorno financeiro estimado de cada zona da sua fazenda.',
-    oldPrice: 'R$ 17,00'
+    oldPrice: '$ 17,00'
   },
   {
     id: 'bonus-plants',
     badge: 'BÔNUS 03',
     title: 'Guia de Plantas Companheiras',
     desc: 'Aprenda o que plantar junto para aumentar a produtividade naturalmente. Pares ideais.',
-    oldPrice: 'R$ 17,00'
+    oldPrice: '$ 17,00'
   },
   {
     id: 'bonus-solar',
     badge: 'BÔNUS 04',
     title: 'Manual de Energia Solar Rural',
     desc: 'Dimensione sistemas solares para casas rurais, poços e irrigação. Cálculos passo a passo.',
-    oldPrice: 'R$ 17,00'
+    oldPrice: '$ 17,00'
   }
 ];
 
