@@ -61,10 +61,10 @@ export default function Pricing() {
             </div>
 
             <div className="mb-6">
-              <span className="text-white/50 line-through block text-xs mb-1">De R$ 397 por</span>
+              <span className="text-white/50 line-through block text-xs mb-1">De $ 197 por</span>
               <div className="flex items-center justify-center gap-1">
-                <span className="text-xl font-bold text-primary self-start mt-1">R$</span>
-                <span className="text-5xl font-headline font-bold text-primary">97</span>
+                <span className="text-xl font-bold text-primary self-start mt-1">$</span>
+                <span className="text-5xl font-headline font-bold text-primary">9</span>
               </div>
               <p className="text-[9px] text-white/50 mt-1 uppercase tracking-tighter">Pagamento único · Acesso vitalício + Bônus</p>
             </div>
