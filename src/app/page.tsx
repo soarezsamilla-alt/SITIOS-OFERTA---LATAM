@@ -25,8 +25,8 @@ export default function LandingPage() {
       <ProductOverview />
       <Benefits />
       <WhatYouGet />
-      <Bonus />
       <Testimonials />
+      <Bonus />
       <Pricing />
       
       {/* Guarantee Section - Redesigned as a card */}
