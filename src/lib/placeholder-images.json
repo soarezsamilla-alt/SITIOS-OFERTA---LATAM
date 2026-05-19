@@ -8,33 +8,63 @@
     },
     {
       "id": "sample-1",
-      "description": "Technical project sample 08",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1777337084037-1f2ff87f-b895-4b37-b711-717bdf832e21.blob",
-      "imageHint": "farm blueprint"
+      "description": "Amostra do Projeto Técnico 01",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227478825-868e1785-44e5-4fd5-bf0e-aa8791f8a54c.png",
+      "imageHint": "rural blueprint"
     },
     {
       "id": "sample-2",
-      "description": "Technical project sample 09",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1777337122577-5d6b87ca-fd17-4093-a9c0-2fede5187f55.blob",
-      "imageHint": "rural design"
+      "description": "Amostra do Projeto Técnico 02",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227527836-7e9d7bb3-c918-41e2-95c0-39e80dee8196.png",
+      "imageHint": "farm design"
     },
     {
       "id": "sample-3",
-      "description": "Rural Technical Project",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1777326963015-ec9779fc-9a3a-427f-ac25-eaf771bce357.blob",
+      "description": "Amostra do Projeto Técnico 03",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227580437-27b3966c-241e-418b-bdfd-38e28079f541.png",
       "imageHint": "agricultural plan"
     },
     {
       "id": "sample-4",
-      "description": "Pasture Division Plan",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1777326290465-87cdd7ee-7d0e-49bf-9f14-c2bd33a149f9.blob",
-      "imageHint": "land division"
+      "description": "Amostra do Projeto Técnico 04",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227648888-85c1e9e8-0d02-4d79-89f1-951f7ede0c01.png",
+      "imageHint": "land planning"
     },
     {
       "id": "sample-5",
-      "description": "Premium Detail Project",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1777172189294-ce35de3a-6a75-425c-aef7-a9a57c120ea9.blob",
-      "imageHint": "detailed map"
+      "description": "Amostra do Projeto Técnico 05",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227686186-73c64665-434b-45e6-92d5-310175b4f083.png",
+      "imageHint": "technical drawing"
+    },
+    {
+      "id": "sample-6",
+      "description": "Amostra do Projeto Técnico 06",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227721192-f5bc4948-4530-4b83-b1ff-e3a8a42eff09.png",
+      "imageHint": "rural construction"
+    },
+    {
+      "id": "sample-7",
+      "description": "Amostra do Projeto Técnico 07",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778633823088-c1269602-561a-477e-b83e-1631f4936ef6.png",
+      "imageHint": "execution steps"
+    },
+    {
+      "id": "sample-8",
+      "description": "Amostra do Projeto Técnico 08",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227831149-3f632b9b-e796-4e8f-b5a2-0d7596a49079.png",
+      "imageHint": "detailed layout"
+    },
+    {
+      "id": "sample-9",
+      "description": "Amostra do Projeto Técnico 09",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227882622-fd2c3720-9941-487a-9225-813b6be2beec.png",
+      "imageHint": "production zones"
+    },
+    {
+      "id": "sample-10",
+      "description": "Amostra do Projeto Técnico 10",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779227946126-db94f760-60fb-40ca-ba51-3ddbf2c8ff92.png",
+      "imageHint": "farm map"
     },
     {
       "id": "product-mockup-detailed",
