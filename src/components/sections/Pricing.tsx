@@ -86,7 +86,9 @@ export default function Pricing() {
               <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Garantia de 7 dias</li>
             </ul>
 
-            <Button className="w-full py-6 text-lg font-bold gold-gradient text-background hover:scale-105 transition-all shadow-xl shimmer-btn animate-pulse-gold">¡ACCESO AHORA!</Button>
+            <Button asChild className="w-full py-6 text-lg font-bold gold-gradient text-background hover:scale-105 transition-all shadow-xl shimmer-btn animate-pulse-gold">
+              <a href="https://pay.hotmart.com/K105902897X?checkoutMode=10">¡ACCESO AHORA!</a>
+            </Button>
             
             <p className="mt-4 text-destructive font-bold text-[10px] animate-pulse">Você não vai encontrar este preço depois.</p>
             <div className="mt-2 flex items-center gap-2 text-white/50 text-[9px] uppercase tracking-widest">
