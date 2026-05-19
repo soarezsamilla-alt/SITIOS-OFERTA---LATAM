@@ -22,9 +22,9 @@ export default function SamplesCarousel() {
   };
 
   return (
-    <section className="py-12 bg-accent/5 overflow-hidden">
+    <section className="py-16 bg-accent/5 overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground font-headline">
             Uma Amostra do Material que Você vai <span className="text-primary italic">Receber</span>
           </h2>
