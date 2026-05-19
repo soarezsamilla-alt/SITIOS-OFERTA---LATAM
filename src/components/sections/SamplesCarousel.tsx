@@ -38,13 +38,13 @@ export default function SamplesCarousel() {
             className="flex gap-6 overflow-x-auto carousel-hide-scrollbar snap-x snap-mandatory py-4"
           >
             {samples.map((sample, idx) => (
-              <div key={idx} className="flex-none w-[300px] md:w-[400px] snap-start">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-border/50 transition-transform duration-500 hover:scale-[1.02]">
+              <div key={idx} className="flex-none w-[300px] md:w-[450px] snap-start">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-border/50 transition-transform duration-500 hover:scale-[1.02] bg-white/5">
                   <Image
                     src={sample.imageUrl}
                     alt={sample.description}
                     fill
-                    className="object-cover"
+                    className="object-contain p-2"
                     data-ai-hint={sample.imageHint}
                   />
                 </div>
@@ -55,7 +55,7 @@ export default function SamplesCarousel() {
           <Button 
             variant="outline" 
             size="icon" 
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur shadow-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur shadow-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
             onClick={() => scroll('left')}
           >
             <ChevronLeft className="h-6 w-6" />
@@ -64,7 +64,7 @@ export default function SamplesCarousel() {
           <Button 
             variant="outline" 
             size="icon" 
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur shadow-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur shadow-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
             onClick={() => scroll('right')}
           >
             <ChevronRight className="h-6 w-6" />
