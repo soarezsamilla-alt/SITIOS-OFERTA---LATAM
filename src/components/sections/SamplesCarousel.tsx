@@ -33,7 +33,7 @@ export default function SamplesCarousel() {
           </p>
         </div>
 
-        <div className="relative max-w-[1200px] mx-auto">
+        <div className="relative max-w-[1400px] mx-auto">
           {/* Main Carousel Wrapper */}
           <div 
             ref={carouselRef}
@@ -41,14 +41,14 @@ export default function SamplesCarousel() {
           >
             {samples.map((sample, idx) => (
               <div key={idx} className="flex-none w-full snap-center">
-                <div className="relative aspect-[16/10] w-full transition-all duration-500 shadow-2xl rounded-sm overflow-hidden bg-black/5">
+                <div className="relative aspect-[16/10] md:aspect-[16/9] w-full transition-all duration-500 shadow-2xl rounded-sm overflow-hidden bg-black/5">
                   <Image
                     src={sample.imageUrl}
                     alt={sample.description}
                     fill
                     className="object-contain"
                     data-ai-hint={sample.imageHint}
-                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    sizes="(max-width: 1400px) 100vw, 1400px"
                     priority={idx === 0}
                   />
                 </div>
@@ -61,10 +61,10 @@ export default function SamplesCarousel() {
             <Button 
               variant="outline" 
               size="icon" 
-              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-14 md:w-14 hover:bg-primary/20 transition-all"
+              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-16 md:w-16 hover:bg-primary/20 transition-all"
               onClick={() => scroll('left')}
             >
-              <ChevronLeft className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+              <ChevronLeft className="h-6 w-6 md:h-10 md:w-10 text-primary" />
             </Button>
           </div>
 
@@ -72,10 +72,10 @@ export default function SamplesCarousel() {
             <Button 
               variant="outline" 
               size="icon" 
-              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-14 md:w-14 hover:bg-primary/20 transition-all"
+              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-16 md:w-16 hover:bg-primary/20 transition-all"
               onClick={() => scroll('right')}
             >
-              <ChevronRight className="h-6 w-6 md:h-8 md:w-8 text-primary" />
+              <ChevronRight className="h-6 w-6 md:h-10 md:w-10 text-primary" />
             </Button>
           </div>
         </div>
