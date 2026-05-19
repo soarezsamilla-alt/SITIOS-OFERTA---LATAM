@@ -13,7 +13,7 @@ export default function SamplesCarousel() {
 
   const scroll = (direction: 'left' | 'right') => {
     if (carouselRef.current) {
-      const scrollAmount = carouselRef.current.offsetWidth * 0.8;
+      const scrollAmount = carouselRef.current.offsetWidth;
       carouselRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth'
@@ -34,43 +34,45 @@ export default function SamplesCarousel() {
         </div>
 
         <div className="relative max-w-[1200px] mx-auto">
+          {/* Main Carousel Wrapper */}
           <div 
             ref={carouselRef}
-            className="flex gap-4 md:gap-6 overflow-x-auto carousel-hide-scrollbar snap-x snap-mandatory py-4"
+            className="flex gap-2 overflow-x-auto carousel-hide-scrollbar snap-x snap-mandatory py-4"
           >
             {samples.map((sample, idx) => (
-              <div key={idx} className="flex-none w-[90vw] md:w-[850px] snap-center">
-                <div className="relative aspect-[16/12] w-full transition-all duration-500 hover:scale-[1.01] shadow-2xl rounded-sm overflow-hidden bg-black/20">
+              <div key={idx} className="flex-none w-full snap-center">
+                <div className="relative aspect-[16/10] w-full transition-all duration-500 shadow-2xl rounded-sm overflow-hidden bg-black/5">
                   <Image
                     src={sample.imageUrl}
                     alt={sample.description}
                     fill
                     className="object-contain"
                     data-ai-hint={sample.imageHint}
-                    sizes="(max-width: 768px) 90vw, 850px"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    priority={idx === 0}
                   />
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Navigation Arrows - Better positioned and more visible */}
-          <div className="absolute top-1/2 -left-2 md:-left-12 -translate-y-1/2 z-20">
+          {/* Navigation Arrows - Positioned OVER the images */}
+          <div className="absolute top-1/2 left-2 md:left-6 -translate-y-1/2 z-20">
             <Button 
               variant="outline" 
               size="icon" 
-              className="bg-background/90 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-14 md:w-14 hover:bg-primary/10 transition-colors"
+              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-14 md:w-14 hover:bg-primary/20 transition-all"
               onClick={() => scroll('left')}
             >
               <ChevronLeft className="h-6 w-6 md:h-8 md:w-8 text-primary" />
             </Button>
           </div>
 
-          <div className="absolute top-1/2 -right-2 md:-right-12 -translate-y-1/2 z-20">
+          <div className="absolute top-1/2 right-2 md:right-6 -translate-y-1/2 z-20">
             <Button 
               variant="outline" 
               size="icon" 
-              className="bg-background/90 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-14 md:w-14 hover:bg-primary/10 transition-colors"
+              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-14 md:w-14 hover:bg-primary/20 transition-all"
               onClick={() => scroll('right')}
             >
               <ChevronRight className="h-6 w-6 md:h-8 md:w-8 text-primary" />
