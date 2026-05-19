@@ -3,23 +3,29 @@
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
-import { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useEffect, useState } from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 export default function SamplesCarousel() {
   const samples = PlaceHolderImages.filter(img => img.id.startsWith('sample-'));
-  const carouselRef = useRef<HTMLDivElement>(null);
+  const [api, setApi] = useState<CarouselApi>();
 
-  const scroll = (direction: 'left' | 'right') => {
-    if (carouselRef.current) {
-      const scrollAmount = carouselRef.current.offsetWidth;
-      carouselRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
-      });
-    }
-  };
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [api]);
 
   return (
     <section className="py-16 bg-accent/5 overflow-hidden">
@@ -33,57 +39,45 @@ export default function SamplesCarousel() {
           </p>
         </div>
 
-        <div className="relative max-w-[1400px] mx-auto">
-          {/* Main Carousel Wrapper */}
-          <div 
-            ref={carouselRef}
-            className="flex gap-2 overflow-x-auto carousel-hide-scrollbar snap-x snap-mandatory py-4"
+        <div className="max-w-6xl mx-auto relative px-8">
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
           >
-            {samples.map((sample, idx) => (
-              <div key={idx} className="flex-none w-full snap-center">
-                <div className="relative aspect-[16/10] md:aspect-[16/9] w-full transition-all duration-500 shadow-2xl rounded-sm overflow-hidden bg-black/5">
-                  <Image
-                    src={sample.imageUrl}
-                    alt={sample.description}
-                    fill
-                    className="object-contain"
-                    data-ai-hint={sample.imageHint}
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    priority={idx === 0}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Arrows - Positioned OVER the images */}
-          <div className="absolute top-1/2 left-2 md:left-6 -translate-y-1/2 z-20">
-            <Button 
-              variant="outline" 
-              size="icon" 
-              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-16 md:w-16 hover:bg-primary/20 transition-all"
-              onClick={() => scroll('left')}
-            >
-              <ChevronLeft className="h-6 w-6 md:h-10 md:w-10 text-primary" />
-            </Button>
-          </div>
-
-          <div className="absolute top-1/2 right-2 md:right-6 -translate-y-1/2 z-20">
-            <Button 
-              variant="outline" 
-              size="icon" 
-              className="bg-background/80 backdrop-blur shadow-2xl rounded-full border-primary/40 h-10 w-10 md:h-16 md:w-16 hover:bg-primary/20 transition-all"
-              onClick={() => scroll('right')}
-            >
-              <ChevronRight className="h-6 w-6 md:h-10 md:w-10 text-primary" />
-            </Button>
-          </div>
+            <CarouselContent className="-ml-4">
+              {samples.map((sample, idx) => (
+                <CarouselItem key={idx} className="pl-4 basis-full sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                  <div className="relative aspect-[9/16] w-full transition-all duration-500 hover:scale-[1.05] flex items-center justify-center">
+                    <Image
+                      src={sample.imageUrl}
+                      alt={sample.description}
+                      fill
+                      className="rounded-xl object-contain pointer-events-none"
+                      data-ai-hint={sample.imageHint}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 25vw, 20vw"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            
+            <div className="absolute -left-4 md:-left-8 top-1/2 -translate-y-1/2 z-10">
+              <CarouselPrevious className="static translate-y-0 text-primary border-primary/30 hover:bg-primary/10 h-10 w-10 md:h-12 md:w-12" />
+            </div>
+            <div className="absolute -right-4 md:-right-8 top-1/2 -translate-y-1/2 z-10">
+              <CarouselNext className="static translate-y-0 text-primary border-primary/30 hover:bg-primary/10 h-10 w-10 md:h-12 md:w-12" />
+            </div>
+          </Carousel>
         </div>
 
         <div className="mt-16 bg-secondary/20 py-8 px-8 md:px-12 rounded-2xl border-l-[6px] border-l-primary max-w-4xl mx-auto shadow-xl">
           <div className="flex items-start gap-4">
             <div className="mt-1 text-primary">
-              <ChevronRight className="w-6 h-6" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6"><path d="m9 18 6-6-6-6"/></svg>
             </div>
             <div>
               <h4 className="text-xl md:text-2xl font-bold text-foreground mb-3 font-headline uppercase tracking-tight">Observação Importante</h4>
