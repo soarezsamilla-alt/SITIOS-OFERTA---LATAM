@@ -27,6 +27,18 @@ export default function RootLayout({
           data-utmify-prevent-subids
           strategy="afterInteractive"
         />
+
+        {/* UTMify Pixel Script */}
+        <Script id="utmify-pixel" strategy="afterInteractive">
+          {`
+            window.pixelId = "6a0d023c8368d2f77a2a22f1";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
         
         {/* Facebook Pixel Code */}
         <Script id="facebook-pixel" strategy="afterInteractive">
