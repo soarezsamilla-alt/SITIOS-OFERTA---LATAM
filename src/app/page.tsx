@@ -11,7 +11,6 @@ import AboutCreator from '@/components/sections/AboutCreator';
 import FAQ from '@/components/sections/FAQ';
 import Footer from '@/components/layout/Footer';
 import SalesNotification from '@/components/ui/SalesNotification';
-import AIAssistant from '@/components/sections/AIAssistant';
 
 export default function LandingPage() {
   return (
@@ -28,7 +27,6 @@ export default function LandingPage() {
         <ProductOverview />
         <Benefits />
         <WhatYouGet />
-        <AIAssistant />
         <Testimonials />
         <Bonus />
         <div className="pt-12">
