@@ -6,62 +6,61 @@ import Image from 'next/image';
 const benefits = [
   { 
     val: '+100', 
-    title: 'PROJETOS COMPLETOS', 
-    desc: 'Plantas técnicas dimensionadas prontas pra você executar',
+    title: 'PROYECTOS COMPLETOS', 
+    desc: 'Planos técnicos dimensionados listos para que los ejecutes',
     imgId: 'benefit-1'
   },
   { 
     val: '0,5-5', 
-    title: 'HECTARES COBERTOS', 
-    desc: 'Tem projeto pro seu tamanho de terreno, não importa qual seja',
+    title: 'HECTÁREAS CUBIERTAS', 
+    desc: 'Hay un proyecto para el tamaño de tu terreno, sin importar cuál sea',
     imgId: 'benefit-2'
   },
   { 
     val: '7', 
-    title: 'VOCAÇÕES PRODUTIVAS', 
-    desc: 'Café, hortifruti, pecuária, piscicultura, agrofloresta e mais',
+    title: 'VOCACIONES PRODUCTIVAS', 
+    desc: 'Café, frutas y hortalizas, ganadería, piscicultura, agroforestería y más',
     imgId: 'benefit-3'
   },
   { 
     val: '5', 
-    title: 'REGIÕES CLIMÁTICAS', 
-    desc: 'Adaptados pra Tropical Úmido, Savana, Semiárido, Temperado e Andino',
+    title: 'REGIONES CLIMÁTICAS', 
+    desc: 'Adaptados para Tropical Húmedo, Sabana, Semiárido, Templado y Andino',
     imgId: 'benefit-4'
   },
   { 
     val: '$3K', 
-    title: 'ECONOMIZADOS', 
-    desc: 'Equivalente ao que cobraria um engenheiro agrônomo particular',
+    title: 'AHORRADOS', 
+    desc: 'Equivalente a lo que cobraría un ingeniero agrónomo particular',
     imgId: 'benefit-5'
   },
   { 
     val: '$2.8K', 
-    title: 'RENDA MENSAL POSSÍVEL', 
-    desc: 'Projeção realista baseada em cases validados de produtores reais',
+    title: 'INGRESO MENSUAL POSIBLE', 
+    desc: 'Proyección realista basada en casos validados de productores reales',
     imgId: 'benefit-6'
   },
   { 
     val: '100%', 
-    title: 'MEDIDAS TESTADAS', 
-    desc: 'Validadas em campo por mais de 12 mil produtores latinoamericanos',
+    title: 'MEDIDAS TESTEADAS', 
+    desc: 'Validadas en campo por más de 12 mil productores latinoamericanos',
     imgId: 'benefit-7'
   },
   { 
-    val: 'PASSO', 
-    title: 'A PASSO CLARO', 
-    desc: 'Não precisa ser técnico, é só seguir as plantas e aplicar',
+    val: 'PASO', 
+    title: 'A PASO CLARO', 
+    desc: 'No necesitas ser técnico, solo sigue los planos y aplica',
     imgId: 'benefit-8'
   },
   { 
     val: '∞', 
-    title: 'ACESSO VITALÍCIO', 
-    desc: 'Imediato após compra + receba atualizações futuras gratuitas',
+    title: 'ACCESO DE POR VIDA', 
+    desc: 'Inmediato tras la compra + recibe actualizaciones futuras gratuitas',
     imgId: 'benefit-9'
   },
 ];
 
 export default function Benefits() {
-  // Dobramos o array para criar o efeito de loop infinito suave
   const infiniteBenefits = [...benefits, ...benefits];
 
   return (
@@ -69,15 +68,14 @@ export default function Benefits() {
       <div className="container mx-auto px-4 mb-10">
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Projetos Altamente Dimensionados, <span className="text-primary italic">Não Ideias Vagas</span>
+            Proyectos Altamente Dimensionados, <span className="text-primary italic">No Ideas Vagas</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-4xl mx-auto font-body leading-relaxed">
-            Cada um dos +100 projetos foi desenhado como uma planta profissional, com medidas reais em metros, divisão das zonas produtivas, posicionamento de casa, galpões, tanques, cultivos e animais.
+            Cada uno de los +100 proyectos fue diseñado como un plano profesional, con medidas reales en metros, división de zonas productivas, ubicación de casa, galpones, tanques, cultivos y animales.
           </p>
         </div>
       </div>
 
-      {/* Marquee Container */}
       <div className="relative flex overflow-x-hidden">
         <div className="flex animate-marquee whitespace-nowrap gap-5 py-4">
           {infiniteBenefits.map((benefit, idx) => {
@@ -88,7 +86,6 @@ export default function Benefits() {
                 className="flex-none w-[320px] md:w-[420px]"
               >
                 <div className="bg-[#0F2F1E] border border-primary/40 rounded-[16px] overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-[0_10px_30px_rgba(201,169,97,0.2)]">
-                  {/* Image Area */}
                   <div className="relative h-[180px] md:h-[220px] w-full bg-secondary/20">
                     {imageData ? (
                       <Image
@@ -101,12 +98,11 @@ export default function Benefits() {
                       />
                     ) : (
                       <div className="w-full h-full gold-gradient flex items-center justify-center">
-                        <span className="text-[#0F2F1E] font-bold text-sm uppercase">Imagem indisponível</span>
+                        <span className="text-[#0F2F1E] font-bold text-sm uppercase">Imagen no disponible</span>
                       </div>
                     )}
                   </div>
 
-                  {/* Content Area */}
                   <div className="p-6 flex flex-col items-center text-center flex-1 whitespace-normal">
                     <div className="font-headline font-bold text-primary text-[36px] md:text-[48px] leading-tight mb-2">
                       {benefit.val}

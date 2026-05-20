@@ -1,11 +1,10 @@
-
 import type {Metadata} from 'next';
 import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Rural Planner | Pack +100 Projetos de Fazendas Produtivas',
-  description: 'A coleção definitiva de projetos de fazendas produtivas da América Latina. +100 plantas dimensionadas com medidas, divisões e designs prontos para executar.',
+  title: 'Plan Rural | Pack +100 Proyectos de Fincas Productivas',
+  description: 'La colección definitiva de proyectos de fincas productivas de América Latina. +100 planos dimensionados con medidas, divisiones y diseños listos para ejecutar.',
 };
 
 export default function RootLayout({
@@ -14,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="dark">
+    <html lang="es" className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

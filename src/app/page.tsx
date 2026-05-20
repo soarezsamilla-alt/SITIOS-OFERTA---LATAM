@@ -11,13 +11,14 @@ import AboutCreator from '@/components/sections/AboutCreator';
 import FAQ from '@/components/sections/FAQ';
 import Footer from '@/components/layout/Footer';
 import SalesNotification from '@/components/ui/SalesNotification';
+import AIAssistant from '@/components/sections/AIAssistant';
 
 export default function LandingPage() {
   return (
     <main className="min-h-screen">
       {/* Top Bar Announcement */}
       <div className="bg-background text-primary py-3 text-center text-xs md:text-sm font-bold tracking-[0.2em] border-b border-primary/30 uppercase">
-        ★ OFERTA DE LANÇAMENTO · EDIÇÃO LIMITADA 2026 ★
+        ★ OFERTA DE LANZAMIENTO · EDICIÓN LIMITADA 2026 ★
       </div>
 
       <Hero />
@@ -27,6 +28,7 @@ export default function LandingPage() {
         <ProductOverview />
         <Benefits />
         <WhatYouGet />
+        <AIAssistant />
         <Testimonials />
         <Bonus />
         <div className="pt-12">

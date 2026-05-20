@@ -1,23 +1,21 @@
 import { Card } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
 
 const problems = [
   {
-    title: 'Terra Subutilizada',
-    description: 'Você tem espaço, mas áreas inteiras ficam ociosas porque não sabe o que fazer com elas.'
+    title: 'Tierra Subutilizada',
+    description: 'Tienes espacio, pero áreas enteras quedan ociosas porque no sabes qué hacer con ellas.'
   },
   {
-    title: 'Renda Vulnerável',
-    description: 'Depender de uma única fonte de produção é arriscado, mas diversificar exige planejamento que você não tem.'
+    title: 'Ingresos Vulnerables',
+    description: 'Depender de una sola fuente de producción es arriesgado, pero diversificar requiere una planificación que no tienes.'
   },
   {
-    title: 'Consultoria Cara',
-    description: 'Contratar um engenheiro agrônomo para fazer o plano do zero custa milhares de reais. E ainda assim vem genérico.'
+    title: 'Consultoría Cara',
+    description: 'Contratar a un ingeniero agrónomo para hacer un plan desde cero cuesta miles de dólares. Y aun así, suele ser genérico.'
   },
   {
-    title: 'Informação Dispersa',
-    description: 'Você busca referências no YouTube e fóruns, mas o que encontra é superficial, sem medidas e sem clareza.'
+    title: 'Información Dispersa',
+    description: 'Buscas referencias en YouTube y foros, pero lo que encuentras es superficial, sin medidas y sin claridad técnica.'
   }
 ];
 
@@ -27,10 +25,10 @@ export default function Problems() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Sua Terra Merece um <span className="text-primary italic">Plano Profissional</span>
+            Tu Tierra Merece un <span className="text-primary italic">Plan Profesional</span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
-            A maioria dos pequenos produtores rurais na América Latina opera muito abaixo do potencial por falta de um mapa claro.
+            La mayoría de los pequeños productores rurales en Latinoamérica operan muy por debajo de su potencial por falta de un mapa claro.
           </p>
         </div>
 

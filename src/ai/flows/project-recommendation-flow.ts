@@ -1,11 +1,10 @@
-
 'use server';
 /**
- * @fileOverview Um fluxo Genkit para recomendar projetos agrícolas adequados com base nos detalhes da terra fornecidos pelo usuário.
+ * @fileOverview Un flujo Genkit para recomendar proyectos agrícolas adecuados basados en los detalles de la tierra proporcionados por el usuario.
  *
- * - recommendProject - Uma função que recebe detalhes da terra e retorna uma lista de projetos agrícolas recomendados.
- * - ProjectRecommendationInput - O tipo de entrada para a função recommendProject.
- * - ProjectRecommendationOutput - O tipo de retorno para a função recommendProject.
+ * - recommendProject - Una función que recibe detalles de la tierra y devuelve una lista de proyectos agrícolas recomendados.
+ * - ProjectRecommendationInput - El tipo de entrada para la función recommendProject.
+ * - ProjectRecommendationOutput - El tipo de retorno para la función recommendProject.
  */
 
 import { ai } from '@/ai/genkit';
@@ -14,19 +13,19 @@ import { z } from 'genkit';
 const ProjectRecommendationInputSchema = z.object({
   landSize: z
     .number()
-    .describe('O tamanho da terra em hectares (ex: 0.5, 1, 2, 3, 5).'),
+    .describe('El tamaño de la tierra en hectáreas (ej: 0.5, 1, 2, 3, 5).'),
   location: z
     .string()
-    .describe('A localização geográfica da terra (ex: "Minas Gerais, Brasil").'),
+    .describe('La ubicación geográfica de la tierra (ej: "Antioquia, Colombia").'),
   climate: z
     .string()
     .describe(
-      'As condições climáticas da terra (ex: "Tropical Úmido", "Savana Tropical", "Zona Semiárida", "Zona Temperada", "Zona Andina").'
+      'Las condiciones climáticas de la tierra (ej: "Tropical Húmedo", "Sabana Tropical", "Zona Semiárida", "Zona Templada", "Zona Andina").'
     ),
   desiredAgriculturalOutput: z
     .string()
     .describe(
-      'O tipo de produtos agrícolas nos quais o usuário está interessado (ex: "café", "hortifruti", "pecuária leiteira", "piscicultura", "agrofloresta", "avicultura", "suinocultura", "apicultura").'
+      'El tipo de productos agrícolas en los que el usuario está interesado (ej: "café", "frutas y hortalizas", "ganadería lechera", "piscicultura", "agroforestería", "avicultura", "cerdos", "apicultura").'
     ),
 });
 export type ProjectRecommendationInput = z.infer<
@@ -36,12 +35,12 @@ export type ProjectRecommendationInput = z.infer<
 const ProjectRecommendationOutputSchema = z.object({
   recommendations: z.array(
     z.object({
-      name: z.string().describe('O nome do projeto recomendado.'),
+      name: z.string().describe('El nombre del proyecto recomendado.'),
       description: z
         .string()
-        .describe('Uma breve descrição do projeto recomendado.'),
+        .describe('Una breve descripción técnica del proyecto recomendado.'),
       reason:
-        z.string().describe('Por que este projeto é adequado com base nos critérios fornecidos.'),
+        z.string().describe('Por qué este proyecto es adecuado según los criterios proporcionados.'),
     })
   ),
 });
@@ -53,28 +52,28 @@ const projectRecommendationPrompt = ai.definePrompt({
   name: 'projectRecommendationPrompt',
   input: { schema: ProjectRecommendationInputSchema },
   output: { schema: ProjectRecommendationOutputSchema },
-  prompt: `Você é um consultor agrícola especialista em projetos de fazendas produtivas na América Latina.
-Seu objetivo é recomendar projetos adequados de um catálogo de mais de 100 opções, com base nos detalhes da terra do usuário e no produto desejado.
+  prompt: `Eres un consultor agrícola experto en proyectos de fincas productivas en América Latina.
+Tu objetivo es recomendar proyectos adecuados de un catálogo de más de 100 opciones, basándote en los detalles de la tierra del usuario y en el producto deseado.
 
-Use as seguintes informações para gerar suas recomendações. Forneça no máximo 3 recomendações em PORTUGUÊS (BRASIL).
+Usa la siguiente información para generar tus recomendaciones. Proporciona como máximo 3 recomendaciones en ESPAÑOL (LATINOAMÉRICA).
 
-Detalhes da Terra do Usuário:
-- Tamanho da Terra: {{{landSize}}} hectares
-- Localização Geográfica: {{{location}}}
-- Condições Climáticas: {{{climate}}}
-- Produção Desejada: {{{desiredAgriculturalOutput}}}
+Detalles de la Tierra del Usuario:
+- Tamaño de la Tierra: {{{landSize}}} hectáreas
+- Ubicación Geográfica: {{{location}}}
+- Condiciones Climáticas: {{{climate}}}
+- Producción Deseada: {{{desiredAgriculturalOutput}}}
 
-Informações do Catálogo (para sua referência):
-- Projetos categorizados por tamanho (0.5ha, 1ha, 2ha, 3ha, 5ha).
-- Projetos por vocação: Café, hortifruti, piscicultura, pecuária leiteira, agrofloresta, avicultura, suinocultura, apicultura.
-- Climas: Tropical Úmido, Savana Tropical, Zona Semiárida, Zona Templada, Zona Andina.
+Información del Catálogo (para tu referencia):
+- Proyectos categorizados por tamaño (0.5ha, 1ha, 2ha, 3ha, 5ha).
+- Proyectos por vocación: Café, frutas y hortalizas, piscicultura, ganadería lechera, agroforestería, avicultura, cerdos, apicultura.
+- Climas: Tropical Húmedo, Sabana Tropical, Zona Semiárida, Zona Templada, Zona Andina.
 
-Recomende projetos que melhor se ajustem aos critérios. Para cada recomendação, forneça:
-1. Um 'name' (nome) para o projeto.
-2. Uma 'description' (descrição) técnica.
-3. Um 'reason' (motivo) explicando a adequação.
+Recomienda proyectos que mejor se ajusten a los criterios. Para cada recomendación, proporciona:
+1. Un 'name' (nombre) para el proyecto.
+2. Una 'description' (descripción) técnica.
+3. Un 'reason' (motivo) explicando la adecuación.
 
-Certifique-se de que as recomendações sejam realistas. Se não houver um ajuste direto, sugira a alternativa mais próxima. Responda sempre em português.
+Asegúrate de que las recomendaciones sean realistas. Si no hay un ajuste directo, sugiere la alternativa más cercana. Responde siempre en español neutro de Latinoamérica.
 `,
 });
 

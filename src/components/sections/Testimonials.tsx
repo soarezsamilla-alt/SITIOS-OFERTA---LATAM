@@ -29,7 +29,7 @@ export default function Testimonials() {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 5000); // Pausa de 5 segundos entre as transições
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [api]);
@@ -39,10 +39,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Quem Comprou, <span className="text-primary italic">Recomenda</span>
+            Quienes lo Compraron, lo <span className="text-primary italic">Recomiendan</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Veja os resultados reais e o feedback de produtores que já utilizam o Rural Planner.
+            Mira los resultados reales y los comentarios de productores que ya utilizan el Plan Rural.
           </p>
         </div>
 
@@ -77,7 +77,6 @@ export default function Testimonials() {
               })}
             </CarouselContent>
             
-            {/* Setas de navegação visíveis e posicionadas */}
             <div className="absolute -left-4 md:-left-8 top-1/2 -translate-y-1/2 z-10">
               <CarouselPrevious className="static translate-y-0 text-primary border-primary/30 hover:bg-primary/10 h-10 w-10 md:h-12 md:w-12" />
             </div>

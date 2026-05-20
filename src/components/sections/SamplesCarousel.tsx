@@ -1,4 +1,3 @@
-
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -32,10 +31,10 @@ export default function SamplesCarousel() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground font-headline">
-            Uma Amostra do Material que Você vai <span className="text-primary italic">Receber</span>
+            Una Muestra del Material que Vas a <span className="text-primary italic">Recibir</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            Veja abaixo exemplos reais das páginas que você vai receber. Cada projeto entregue com padrão editorial profissional.
+            Mira a continuación ejemplos reales de las páginas que recibirás. Cada proyecto entregado con un estándar editorial profesional.
           </p>
         </div>
 
@@ -80,9 +79,9 @@ export default function SamplesCarousel() {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6"><path d="m9 18 6-6-6-6"/></svg>
             </div>
             <div>
-              <h4 className="text-xl md:text-2xl font-bold text-foreground mb-3 font-headline uppercase tracking-tight">Observação Importante</h4>
+              <h4 className="text-xl md:text-2xl font-bold text-foreground mb-3 font-headline uppercase tracking-tight">Nota Importante</h4>
               <p className="text-white/70 text-base md:text-lg leading-relaxed font-body">
-                Todos os <strong>+100 projetos</strong> seguem o mesmo padrão editorial premium que você vê nas amostras acima — com medidas visíveis, zonas identificadas e layouts profissionais.
+                Todos los <strong>+100 proyectos</strong> siguen el mismo estándar editorial premium que ves en las muestras de arriba — con medidas visibles, zonas identificadas y diseños profesionales.
               </p>
             </div>
           </div>

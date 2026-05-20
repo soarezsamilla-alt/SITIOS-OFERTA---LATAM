@@ -23,22 +23,19 @@ export default function SalesNotification() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Começa escondendo para trocar o dado
       setVisible(false);
       
       setTimeout(() => {
         setCurrent((prev) => (prev + 1) % notifications.length);
         setVisible(true);
-      }, 500); // Pequeno delay antes de mostrar o próximo
+      }, 500);
 
-      // Esconde após 4 segundos
       setTimeout(() => {
         setVisible(false);
       }, 4500);
 
-    }, 6000); // Ciclo total de 6 segundos
+    }, 6000);
 
-    // Primeira exibição após 2 segundos
     const firstTimeout = setTimeout(() => setVisible(true), 2000);
 
     return () => {
@@ -65,7 +62,7 @@ export default function SalesNotification() {
             <span className="font-bold">{person.name}</span> de {person.city}
           </p>
           <p className="text-[9px] text-white/70 font-medium truncate">
-            Acaba de comprar el <span className="text-primary font-bold">Rural Planner</span>
+            Acaba de comprar el <span className="text-primary font-bold">Plan Rural</span>
           </p>
           <p className="text-[7px] text-primary/70 mt-0.5 uppercase tracking-tighter font-bold">
             Hace unos segundos

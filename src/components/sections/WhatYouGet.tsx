@@ -3,23 +3,23 @@
 const categories = [
   {
     number: '50',
-    title: 'Por Tamanho de Terreno',
-    description: 'Projetos dimensionados para 0,5ha, 1ha, 2ha, 3ha e 5ha, 10 projetos para cada tamanho.',
+    title: 'Por Tamaño de Terreno',
+    description: 'Proyectos dimensionados para 0,5ha, 1ha, 2ha, 3ha y 5ha, con 10 proyectos por cada tamaño.',
   },
   {
     number: '35',
-    title: 'Por Vocação Produtiva',
-    description: 'Café, hortifruti, piscicultura, pecuária leiteira, agrofloresta, avicultura, suínos e apicultura.',
+    title: 'Por Vocación Productiva',
+    description: 'Café, frutas y hortalizas, piscicultura, ganadería lechera, agroforestería, avicultura, cerdos y apicultura.',
   },
   {
     number: '20',
-    title: 'Por Região Climática',
-    description: 'Projetos dimensionados para: Tropical Úmido, Savana Tropical, Zona Semiárida, Zona Temperada e Zona Andina, adaptados ao seu clima e país.',
+    title: 'Por Región Climática',
+    description: 'Proyectos dimensionados para: Tropical Húmedo, Sabana Tropical, Zona Semiárida, Zona Templada y Zona Andina, adaptados a tu clima y país.',
   },
   {
     number: '10',
-    title: 'Projetos Especiais',
-    description: 'Orgânico certificado, permacultura, agroturismo, agroindústria caseira, energia renovável e mais.',
+    title: 'Proyectos Especiales',
+    description: 'Orgánico certificado, permacultura, agroturismo, agroindustria casera, energía renovable y más.',
   }
 ];
 
@@ -29,10 +29,10 @@ export default function WhatYouGet() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 font-headline">
-            O Que Você Vai <span className="text-primary italic">Receber Hoje</span>
+            Lo Que Recibirás <span className="text-primary italic">Hoy</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-4xl mx-auto font-body leading-relaxed">
-            +100 projetos organizados em 4 grandes categorias para você encontrar exatamente o que precisa, seja qual for o seu tamanho, vocação ou região climática.
+            +100 proyectos organizados en 4 grandes categorías para que encuentres exactamente lo que necesitas, sea cual sea tu tamaño, vocación o región climática.
           </p>
         </div>
 

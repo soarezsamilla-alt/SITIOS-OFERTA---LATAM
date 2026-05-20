@@ -6,31 +6,31 @@ import Image from 'next/image';
 const bonuses = [
   {
     id: 'bonus-construction',
-    badge: 'BÔNUS 01',
-    title: 'Pack de Construções Rurais',
-    desc: '10 plantas prontas de galinheiros, pocilgas, estábulos e tanques com medidas e materiais.',
-    oldPrice: '$ 17,00'
+    badge: 'BONO 01',
+    title: 'Pack de Construcciones Rurales',
+    desc: '10 planos listos de gallineros, porquerizas, establos y tanques con medidas y materiales.',
+    oldPrice: '$17 USD'
   },
   {
     id: 'bonus-roi',
-    badge: 'BÔNUS 02',
-    title: 'Calculadora de ROI Produtivo',
-    desc: 'Calculadora editável que mostra o retorno financeiro estimado de cada zona da sua fazenda.',
-    oldPrice: '$ 17,00'
+    badge: 'BONO 02',
+    title: 'Calculadora de ROI Productivo',
+    desc: 'Calculadora editable que muestra el retorno financiero estimado de cada zona de tu finca.',
+    oldPrice: '$17 USD'
   },
   {
     id: 'bonus-plants',
-    badge: 'BÔNUS 03',
-    title: 'Guia de Plantas Companheiras',
-    desc: 'Aprenda o que plantar junto para aumentar a produtividade naturalmente. Pares ideais.',
-    oldPrice: '$ 17,00'
+    badge: 'BONO 03',
+    title: 'Guía de Plantas Compañeras',
+    desc: 'Aprende qué plantar junto para aumentar la productividad naturalmente. Pares ideales.',
+    oldPrice: '$17 USD'
   },
   {
     id: 'bonus-solar',
-    badge: 'BÔNUS 04',
-    title: 'Manual de Energia Solar Rural',
-    desc: 'Dimensione sistemas solares para casas rurais, poços e irrigação. Cálculos passo a passo.',
-    oldPrice: '$ 17,00'
+    badge: 'BONO 04',
+    title: 'Manual de Energía Solar Rural',
+    desc: 'Dimensiona sistemas solares para casas rurales, pozos e irrigación. Cálculos paso a paso.',
+    oldPrice: '$17 USD'
   }
 ];
 
@@ -40,10 +40,10 @@ export default function Bonus() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Você Produtor <span className="text-primary italic">Merece Ainda Mais</span>
+            Tú, Productor, <span className="text-primary italic">Mereces Aún Más</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Quem garantir o Plano Pro leva também estes 4 bônus estratégicos que complementam os +100 projetos.
+            Quienes aseguren el Plan Pro también se llevan estos 4 bonos estratégicos que complementan los +100 proyectos.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function Bonus() {
                   </div>
                   <div className="flex flex-col items-center justify-center gap-0.5 mt-2">
                     <span className="text-white/30 line-through text-[10px]">{bonus.oldPrice}</span>
-                    <span className="text-primary font-bold text-sm tracking-tight">GRÁTIS</span>
+                    <span className="text-primary font-bold text-sm tracking-tight">GRATIS</span>
                   </div>
                 </div>
               </div>

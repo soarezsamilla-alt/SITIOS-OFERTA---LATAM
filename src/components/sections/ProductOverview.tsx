@@ -10,10 +10,10 @@ export default function ProductOverview() {
     <section className="pt-8 pb-0 bg-background overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-          Conheça o Material <span className="text-primary italic">+100 Projetos</span>
+          Conoce el Material <span className="text-primary italic">+100 Proyectos</span>
         </h2>
         <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-2">
-          Não é um curso. Não é um manual teórico. É uma biblioteca visual completa de projetos prontos para você escolher, imprimir e executar.
+          No es un curso. No es un manual teórico. Es una biblioteca visual completa de proyectos listos para que elijas, imprimas y ejecutes.
         </p>
 
         {mockup && (

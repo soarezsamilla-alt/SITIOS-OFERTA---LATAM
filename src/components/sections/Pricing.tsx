@@ -27,10 +27,10 @@ export default function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-            Garanta Agora com <span className="text-primary italic">Preço Especial</span>
+            Asegúralo Ahora con un <span className="text-primary italic">Precio Especial</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Inclui acesso vitalício, todos os bônus e 7 dias de garantia total.
+            Incluye acceso de por vida, todos los bonos y 7 días de garantía total.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function Pricing() {
             
             <div className="w-full bg-destructive/10 border border-destructive/30 p-3 rounded-xl mb-6">
               <p className="text-destructive font-bold text-[10px] uppercase tracking-widest mb-2 flex items-center justify-center gap-2">
-                < Zap className="w-3.5 h-3.5" /> Oferta Termina Em:
+                < Zap className="w-3.5 h-3.5" /> La Oferta Termina En:
               </p>
               <div className="flex justify-center gap-2">
                 {[
@@ -60,39 +60,39 @@ export default function Pricing() {
             </div>
 
             <div className="mb-6 text-center">
-              <span className="text-white/50 line-through block text-sm mb-1 font-medium tracking-tight">De $ 137,00 por</span>
+              <span className="text-white/50 line-through block text-sm mb-1 font-medium tracking-tight">De $137 USD por</span>
               <div className="flex items-center justify-center gap-1">
                 <span className="text-2xl font-bold text-primary self-start mt-2">$</span>
                 <span className="text-6xl font-headline font-bold text-primary leading-none">9</span>
                 <span className="text-2xl font-bold text-primary self-start mt-2">,00</span>
               </div>
-              <p className="text-[10px] text-white/50 mt-2 uppercase tracking-tight font-semibold">Pagamento único · Acesso vitalício + Bônus</p>
+              <p className="text-[10px] text-white/50 mt-2 uppercase tracking-tight font-semibold">Pago único · Acceso de por vida + Bonos</p>
             </div>
 
             {proMockup && (
               <div className="mb-6 relative w-full aspect-video max-w-[400px]">
-                <Image src={proMockup.imageUrl} alt="Plano Pro" fill className="object-contain" />
+                <Image src={proMockup.imageUrl} alt="Plan Pro" fill className="object-contain" />
               </div>
             )}
 
             <ul className="w-full text-left space-y-2.5 mb-8">
-              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> +100 projetos completos</li>
-              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BÔNUS 1:</strong> Construções Rurais</li>
-              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BÔNUS 2:</strong> Calculadora ROI</li>
-              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BÔNUS 3:</strong> Plantas Companheiras</li>
-              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BÔNUS 4:</strong> Energia Solar Rural</li>
-              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Acesso prioritário a novos projetos</li>
-              <li className="flex items-center gap-2 text-xs text-white/90 font-bold text-primary"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Atualizações gratuitas semanal</li>
-              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Garantia de 7 dias</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> +100 proyectos completos</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 1:</strong> Construcciones Rurales</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 2:</strong> Calculadora ROI</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 3:</strong> Plantas Compañeras</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 4:</strong> Energía Solar Rural</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Acceso prioritario a nuevos proyectos</li>
+              <li className="flex items-center gap-2 text-xs text-white/90 font-bold text-primary"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Actualizaciones gratuitas semanales</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Garantía de 7 días</li>
             </ul>
 
             <Button asChild className="w-full py-6 text-lg font-bold gold-gradient text-background hover:scale-105 transition-all shadow-xl shimmer-btn animate-pulse-gold">
               <a href="https://pay.hotmart.com/K105902897X?checkoutMode=10">¡ACCESO AHORA!</a>
             </Button>
             
-            <p className="mt-4 text-destructive font-bold text-[10px] animate-pulse">Você não vai encontrar este preço depois.</p>
+            <p className="mt-4 text-destructive font-bold text-[10px] animate-pulse">No volverás a encontrar este precio después.</p>
             <div className="mt-2 flex items-center gap-2 text-white/50 text-[9px] uppercase tracking-widest">
-              <ShieldCheck className="w-3.5 h-3.5" /> Pagamento 100% seguro · Acesso imediato
+              <ShieldCheck className="w-3.5 h-3.5" /> Pago 100% seguro · Acceso inmediato
             </div>
           </div>
         </div>
