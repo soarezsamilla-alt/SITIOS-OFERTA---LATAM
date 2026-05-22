@@ -1,3 +1,4 @@
+
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -95,6 +96,7 @@ export default function Benefits() {
                         className="object-cover"
                         data-ai-hint={imageData.imageHint}
                         sizes="(max-width: 768px) 320px, 420px"
+                        unoptimized
                       />
                     ) : (
                       <div className="w-full h-full gold-gradient flex items-center justify-center">
