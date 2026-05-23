@@ -8,61 +8,61 @@
     },
     {
       "id": "sample-1",
-      "description": "Amostra do Projeto Técnico 01",
+      "description": "Muestra del Proyecto Técnico 01",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227478825-868e1785-44e5-4fd5-bf0e-aa8791f8a54c.png",
       "imageHint": "rural blueprint"
     },
     {
       "id": "sample-2",
-      "description": "Amostra do Projeto Técnico 02",
+      "description": "Muestra del Proyecto Técnico 02",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227527836-7e9d7bb3-c918-41e2-95c0-39e80dee8196.png",
       "imageHint": "farm design"
     },
     {
       "id": "sample-3",
-      "description": "Amostra do Projeto Técnico 03",
+      "description": "Muestra del Proyecto Técnico 03",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227580437-27b3966c-241e-418b-bdfd-38e28079f541.png",
       "imageHint": "agricultural plan"
     },
     {
       "id": "sample-4",
-      "description": "Amostra do Projeto Técnico 04",
+      "description": "Muestra del Proyecto Técnico 04",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227648888-85c1e9e8-0d02-4d79-89f1-951f7ede0c01.png",
       "imageHint": "land planning"
     },
     {
       "id": "sample-5",
-      "description": "Amostra do Projeto Técnico 05",
+      "description": "Muestra del Proyecto Técnico 05",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227686186-73c64665-434b-45e6-92d5-310175b4f083.png",
       "imageHint": "technical drawing"
     },
     {
       "id": "sample-6",
-      "description": "Amostra do Projeto Técnico 06",
+      "description": "Muestra del Proyecto Técnico 06",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227721192-f5bc4948-4530-4b83-b1ff-e3a8a42eff09.png",
       "imageHint": "rural construction"
     },
     {
       "id": "sample-7",
-      "description": "Amostra do Projeto Técnico 07",
+      "description": "Muestra del Proyecto Técnico 07",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779228796729-063bc753-d313-4b18-ad7e-34738b1f2283.png",
       "imageHint": "execution steps"
     },
     {
       "id": "sample-8",
-      "description": "Amostra do Projeto Técnico 08",
+      "description": "Muestra del Proyecto Técnico 08",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227831149-3f632b9b-e796-4e8f-b5a2-0d7596a49079.png",
       "imageHint": "detailed layout"
     },
     {
       "id": "sample-9",
-      "description": "Amostra do Projeto Técnico 09",
+      "description": "Muestra del Proyecto Técnico 09",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227882622-fd2c3720-9941-487a-9225-813b6be2beec.png",
       "imageHint": "production zones"
     },
     {
       "id": "sample-10",
-      "description": "Amostra do Projeto Técnico 10",
+      "description": "Muestra del Proyecto Técnico 10",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779227946126-db94f760-60fb-40ca-ba51-3ddbf2c8ff92.png",
       "imageHint": "farm map"
     },
@@ -74,7 +74,7 @@
     },
     {
       "id": "bonus-construction",
-      "description": "Pack de Construções Rurais",
+      "description": "Pack de Construcciones Rurales",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778708498997-909c3bb7-d6a5-451b-aae8-361829bdc57b.png",
       "imageHint": "farm building"
     },
@@ -86,7 +86,7 @@
     },
     {
       "id": "bonus-plants",
-      "description": "Guia de Plantas Companheiras",
+      "description": "Guía de Plantas Companheiras",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778708657138-3090dbff-87bd-4e59-831d-4a3b3104c2ce.png",
       "imageHint": "green plants"
     },
@@ -116,19 +116,19 @@
     },
     {
       "id": "benefit-1",
-      "description": "Fazenda Latinoamericana Completa",
+      "description": "Finca Latinoamericana Completa",
       "imageUrl": "https://www.image2url.com/r2/default/images/1779408604249-61d0c563-741b-4a02-abb3-c4c8bc2c0013.png",
       "imageHint": "farm layout"
     },
     {
       "id": "benefit-2",
-      "description": "Mosaico de Tamanhos",
+      "description": "Mosaico de Tamaños",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778633127314-7fd02a0d-c94e-401b-9946-51302c2ad216.png",
       "imageHint": "land size"
     },
     {
       "id": "benefit-3",
-      "description": "Mosaico de Atividades",
+      "description": "Mosaico de Actividades",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778633095997-a5df2437-4d40-4210-a80b-d35de01c0ed8.png",
       "imageHint": "farming activities"
     },
@@ -140,25 +140,25 @@
     },
     {
       "id": "benefit-5",
-      "description": "Comparativo Agrônomo",
+      "description": "Comparativo Agrónomo",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778633352191-c563bcea-7b41-42c1-8fea-5634186d63b7.png",
       "imageHint": "savings graph"
     },
     {
       "id": "benefit-6",
-      "description": "Gráfico de Renda",
+      "description": "Gráfico de Ingresos",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778633579085-b86d0f1f-6f72-4f72-9e1a-3bd333cb5395.png",
       "imageHint": "income chart"
     },
     {
       "id": "benefit-7",
-      "description": "Selo de Qualidade",
+      "description": "Sello de Calidad",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778633730749-0b454189-415e-4dcc-a4d8-ad5e2dae7f23.png",
       "imageHint": "quality seal"
     },
     {
       "id": "benefit-8",
-      "description": "Etapas de Execução",
+      "description": "Etapas de Ejecución",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778633823088-c1269602-561a-477e-b83e-1631f4936ef6.png",
       "imageHint": "steps guide"
     },
@@ -170,37 +170,37 @@
     },
     {
       "id": "testimonial-1",
-      "description": "Depoimento real 01",
+      "description": "Testimonio real 01",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778637463831-fff617a2-1307-4006-b7a7-2b35037e57c7.png",
       "imageHint": "customer review"
     },
     {
       "id": "testimonial-2",
-      "description": "Depoimento real 02",
+      "description": "Testimonio real 02",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778637789011-de4100ad-82ff-401f-be3d-d381a3f5679e.png",
       "imageHint": "user feedback"
     },
     {
       "id": "testimonial-3",
-      "description": "Depoimento real 03",
+      "description": "Testimonio real 03",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778638049492-5c823441-bc0b-4efb-9a58-f3a4bc8b0bcc.png",
       "imageHint": "verified purchase"
     },
     {
       "id": "testimonial-4",
-      "description": "Depoimento real 04",
+      "description": "Testimonio real 04",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778636217662-148f37cc-1c82-403e-b5b2-382b7420f389.png",
       "imageHint": "success story"
     },
     {
       "id": "testimonial-5",
-      "description": "Depoimento real 05",
+      "description": "Testimonio real 05",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778636316874-a0464222-93ee-420e-a099-ef453dbea104.png",
       "imageHint": "happy customer"
     },
     {
       "id": "testimonial-6",
-      "description": "Depoimento real 06",
+      "description": "Testimonio real 06",
       "imageUrl": "https://www.image2url.com/r2/default/images/1778636394813-07c11f56-46b7-49a5-9834-4f24846eeb3e.png",
       "imageHint": "client testimonial"
     },
