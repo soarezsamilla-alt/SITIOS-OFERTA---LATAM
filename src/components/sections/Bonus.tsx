@@ -21,7 +21,7 @@ const bonuses = [
   {
     id: 'bonus-plants',
     badge: 'BONO 03',
-    title: 'Guía de Plantas Compañeras',
+    title: 'Guía de Plantas Companheiras',
     desc: 'Aprende qué plantar junto para aumentar la productividad naturalmente. Pares ideales.',
     oldPrice: '$17 USD'
   },
@@ -43,7 +43,7 @@ export default function Bonus() {
             Tú, Productor, <span className="text-primary italic">Mereces Aún Más</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Quienes aseguren el Plan Pro también se llevan estos 4 bonos estratégicos que complementan los +100 proyectos.
+            Tu acceso incluye además estos 4 bonos estratégicos que complementan los +100 proyectos, totalmente GRATIS.
           </p>
         </div>
 

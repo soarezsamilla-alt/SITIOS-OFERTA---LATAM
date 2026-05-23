@@ -35,7 +35,7 @@ export default function Pricing() {
         </div>
 
         <div className="flex justify-center max-w-5xl mx-auto">
-          {/* Plano Pro */}
+          {/* Acceso Completo */}
           <div className="bg-secondary/20 p-8 rounded-3xl border-2 border-primary flex flex-col items-center text-center relative shadow-2xl scale-105 max-w-md w-full">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 gold-gradient text-background px-6 py-1.5 rounded-full text-xs font-bold tracking-widest whitespace-nowrap">
               ★ OFERTA LIMITADA ★
@@ -60,6 +60,7 @@ export default function Pricing() {
             </div>
 
             <div className="mb-6 text-center">
+              <h3 className="text-2xl font-headline font-bold text-white mb-2">Acceso Completo</h3>
               <span className="text-white/50 line-through block text-sm mb-1 font-medium tracking-tight">De $137 USD por</span>
               <div className="flex items-center justify-center gap-1">
                 <span className="text-2xl font-bold text-primary self-start mt-2">$</span>
@@ -71,7 +72,7 @@ export default function Pricing() {
 
             {proMockup && (
               <div className="mb-6 relative w-full aspect-video max-w-[400px]">
-                <Image src={proMockup.imageUrl} alt="Plan Pro" fill className="object-contain" />
+                <Image src={proMockup.imageUrl} alt="Acceso Completo" fill className="object-contain" />
               </div>
             )}
 
