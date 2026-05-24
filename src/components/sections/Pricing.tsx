@@ -88,7 +88,7 @@ export default function Pricing() {
             </ul>
 
             <Button asChild className="w-full py-6 text-lg font-bold gold-gradient text-background hover:scale-105 transition-all shadow-xl shimmer-btn animate-pulse-gold">
-              <a href="https://pay.hotmart.com/K105902897X?checkoutMode=10">¡ACCESO AHORA!</a>
+              <a href="https://pay.hotmart.com/K105902897X?checkoutMode=10">QUIERO MI PROYECTO POR $9,00</a>
             </Button>
             
             <p className="mt-4 text-destructive font-bold text-[10px] animate-pulse">No volverás a encontrar este precio después.</p>
