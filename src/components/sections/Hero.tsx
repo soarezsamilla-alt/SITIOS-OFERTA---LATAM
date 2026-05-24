@@ -21,14 +21,16 @@ export default function Hero() {
         </p>
 
         {mockup && (
-          <div className="relative max-w-4xl mx-auto mb-6 group animate-soft-float">
-            <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-30 group-hover:opacity-60 transition-opacity duration-700"></div>
+          <div className="relative max-w-4xl mx-auto mb-10 group animate-soft-float">
+            {/* Glow effect */}
+            <div className="absolute -inset-10 bg-primary/20 blur-[100px] rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-1000"></div>
+            
             <Image
               src={mockup.imageUrl}
               alt={mockup.description}
               width={1000}
               height={625}
-              className="relative drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] mx-auto transition-transform duration-500 group-hover:scale-[1.02]"
+              className="relative drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)] mx-auto transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:rotate-1 group-hover:-translate-y-2"
               data-ai-hint={mockup.imageHint}
               priority
             />
