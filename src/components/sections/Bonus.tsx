@@ -43,7 +43,7 @@ const bonuses = [
   {
     id: 'bonus-special',
     badge: 'BONO 06',
-    title: 'Guía de Cultivos de Alto Valor',
+    title: 'Manual de Agua y Riego',
     desc: 'Descubre las plantas más rentables y cuánto ganan por m². Café, aguacate, cacao y más.',
     oldPrice: '$17 USD'
   }
