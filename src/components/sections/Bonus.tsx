@@ -39,6 +39,13 @@ const bonuses = [
     title: 'Guía de Cultivos de Alto Valor',
     desc: 'Descubre las plantas más rentables y cuánto ganan por m². Café, aguacate, cacao y más.',
     oldPrice: '$17 USD'
+  },
+  {
+    id: 'bonus-special',
+    badge: 'BONO 06',
+    title: 'Guía de Cultivos de Alto Valor',
+    desc: 'Descubre las plantas más rentables y cuánto ganan por m². Café, aguacate, cacao y más.',
+    oldPrice: '$17 USD'
   }
 ];
 
@@ -51,11 +58,11 @@ export default function Bonus() {
             Tú, Productor, <span className="text-primary italic">Mereces Aún Más</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Tu acceso incluye además estos 5 bonos estratégicos que complementan los +100 proyectos, totalmente GRATIS.
+            Tu acceso incluye además estos 6 bonos estratégicos que complementan los +100 proyectos, totalmente GRATIS.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {bonuses.map((bonus, idx) => {
             const imgData = PlaceHolderImages.find(img => img.id === bonus.id);
             return (
