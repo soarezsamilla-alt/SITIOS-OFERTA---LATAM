@@ -37,7 +37,7 @@ const bonuses = [
     id: 'bonus-special',
     badge: 'BONO 05',
     title: 'Guía de Cultivos de Alto Valor',
-    desc: 'Un diseño premium exclusivo para máxima rentabilidad y aprovechamiento de espacios.',
+    desc: 'Descubre las plantas más rentables y cuánto ganan por m². Café, aguacate, cacao y más.',
     oldPrice: '$17 USD'
   }
 ];
