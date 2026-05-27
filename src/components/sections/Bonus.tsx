@@ -23,7 +23,7 @@ const bonuses = [
     id: 'bonus-plants',
     badge: 'BONO 03',
     title: 'Guía de Plantas Companheiras',
-    desc: 'Aprende qué plantar junto para aumentar la productividad naturalmente. Pares ideales.',
+    desc: 'Aprende qué plantar junto para aumentar la productivity naturalmente. Pares ideales.',
     oldPrice: '$17 USD'
   },
   {
@@ -34,7 +34,7 @@ const bonuses = [
     oldPrice: '$17 USD'
   },
   {
-    id: 'bonus-solar',
+    id: 'bonus-special',
     badge: 'BONO 05',
     title: 'Manual de Energía Solar Rural',
     desc: 'Dimensiona sistemas solares para casas rurales, pozos e irrigación. Cálculos paso a paso.',

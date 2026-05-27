@@ -98,6 +98,12 @@
       "imageHint": "solar panel"
     },
     {
+      "id": "bonus-special",
+      "description": "Bono Especial 05",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779889057973-9851ad9e-b9ce-46dd-8e8d-a1e76b788c25.png",
+      "imageHint": "farm blueprint"
+    },
+    {
       "id": "basic-plan-mockup",
       "description": "Basic Plan Mockup",
       "imageUrl": "https://www.image2url.com/r2/default/images/1777782450071-a0388525-e66b-4e68-988d-b3915a6fff5b.png",
