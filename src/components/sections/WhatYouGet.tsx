@@ -23,12 +23,15 @@ const categories = [
     number: '10',
     title: 'Proyectos Especiales',
     description: 'Orgánico certificado, permacultura, agroturismo, agroindustria casera, energía renovable y más.',
+  },
+  {
+    number: '4',
+    title: 'Bônus Exclusivos',
+    description: 'Recibirás además: Pack de Construcciones, Calculadora de ROI, Guía de Plantas y Manual de Energía Solar.',
   }
 ];
 
 export default function WhatYouGet() {
-  const bonusImage = PlaceHolderImages.find(img => img.id === 'product-mockup-detailed');
-
   return (
     <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
@@ -37,11 +40,11 @@ export default function WhatYouGet() {
             Lo Que Recibirás <span className="text-primary italic">Hoy</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-4xl mx-auto font-body leading-relaxed">
-            +100 proyectos organizados en 4 grandes categorías para que encuentres exactamente lo que necesitas, sea cual sea tu tamaño, vocación o región climática.
+            +100 proyectos organizados en 5 categorías estratégicas para que encuentres exactamente lo que necesitas, sea cual sea tu tamaño, vocación o región climática.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[30px] mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 mb-12">
           {categories.map((item, idx) => {
             return (
               <div 
@@ -52,42 +55,16 @@ export default function WhatYouGet() {
                   {item.number}
                 </div>
                 
-                <h3 className="text-[20px] font-bold font-headline text-white mb-2 leading-tight">
+                <h3 className="text-[18px] font-bold font-headline text-white mb-2 leading-tight">
                   {item.title}
                 </h3>
                 
-                <p className="text-[14px] font-body text-white/60 leading-[1.5]">
+                <p className="text-[13px] font-body text-white/60 leading-[1.5]">
                   {item.description}
                 </p>
               </div>
             );
           })}
-        </div>
-
-        {/* Card de Bônus Exclusivos */}
-        <div className="max-w-5xl mx-auto bg-secondary/30 border-2 border-primary/30 rounded-[24px] overflow-hidden flex flex-col md:flex-row items-center gap-6 p-8 shadow-2xl transition-all duration-300 hover:border-primary/60">
-           <div className="flex-1 text-center md:text-left">
-             <div className="inline-block bg-primary text-secondary text-[10px] font-bold tracking-[0.2em] px-3 py-1 rounded-full mb-4 uppercase">
-               Regalo de Lanzamiento
-             </div>
-             <h3 className="text-3xl md:text-4xl font-headline font-bold text-white mb-4 leading-tight">
-               También recibirás <span className="text-primary italic">4 Bônus Exclusivos</span>
-             </h3>
-             <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-xl">
-               Como complemento perfecto a tus proyectos, incluimos hoy mismo: Pack de Construcciones, Calculadora de ROI, Guía de Plantas y Manual Solar. Todo GRATIS.
-             </p>
-           </div>
-           {bonusImage && (
-             <div className="w-full md:w-1/3 relative aspect-video md:aspect-square">
-               <Image 
-                 src={bonusImage.imageUrl}
-                 alt={bonusImage.description}
-                 fill
-                 className="object-contain animate-soft-float"
-                 data-ai-hint={bonusImage.imageHint}
-               />
-             </div>
-           )}
         </div>
       </div>
     </section>
