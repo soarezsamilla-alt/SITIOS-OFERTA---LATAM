@@ -36,8 +36,8 @@ const bonuses = [
   {
     id: 'bonus-special',
     badge: 'BONO 05',
-    title: 'Manual de Energía Solar Rural',
-    desc: 'Dimensiona sistemas solares para casas rurales, pozos e irrigación. Cálculos paso a paso.',
+    title: 'Plan Maestro de Finca 2026',
+    desc: 'Un diseño premium exclusivo para máxima rentabilidad y aprovechamiento de espacios.',
     oldPrice: '$17 USD'
   }
 ];
