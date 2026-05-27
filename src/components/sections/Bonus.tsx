@@ -36,7 +36,7 @@ const bonuses = [
   {
     id: 'bonus-special',
     badge: 'BONO 05',
-    title: 'Plan Maestro de Finca 2026',
+    title: 'Guía de Cultivos de Alto Valor',
     desc: 'Un diseño premium exclusivo para máxima rentabilidad y aprovechamiento de espacios.',
     oldPrice: '$17 USD'
   }
