@@ -41,7 +41,7 @@ const bonuses = [
     oldPrice: '$17 USD'
   },
   {
-    id: 'bonus-special',
+    id: 'bonus-water',
     badge: 'BONO 06',
     title: 'Manual de Agua y Riego',
     desc: 'Capta agua de lluvia, arma cisternas e instala riego eficiente. Agua garantida todo el año.',
