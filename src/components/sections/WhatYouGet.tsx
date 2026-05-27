@@ -1,5 +1,8 @@
 'use client';
 
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
+
 const categories = [
   {
     number: '50',
@@ -24,6 +27,8 @@ const categories = [
 ];
 
 export default function WhatYouGet() {
+  const bonusImage = PlaceHolderImages.find(img => img.id === 'product-mockup-detailed');
+
   return (
     <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
@@ -36,7 +41,7 @@ export default function WhatYouGet() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[30px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[30px] mb-12">
           {categories.map((item, idx) => {
             return (
               <div 
@@ -57,6 +62,32 @@ export default function WhatYouGet() {
               </div>
             );
           })}
+        </div>
+
+        {/* Card de Bônus Exclusivos */}
+        <div className="max-w-5xl mx-auto bg-secondary/30 border-2 border-primary/30 rounded-[24px] overflow-hidden flex flex-col md:flex-row items-center gap-6 p-8 shadow-2xl transition-all duration-300 hover:border-primary/60">
+           <div className="flex-1 text-center md:text-left">
+             <div className="inline-block bg-primary text-secondary text-[10px] font-bold tracking-[0.2em] px-3 py-1 rounded-full mb-4 uppercase">
+               Regalo de Lanzamiento
+             </div>
+             <h3 className="text-3xl md:text-4xl font-headline font-bold text-white mb-4 leading-tight">
+               También recibirás <span className="text-primary italic">4 Bônus Exclusivos</span>
+             </h3>
+             <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-xl">
+               Como complemento perfecto a tus proyectos, incluimos hoy mismo: Pack de Construcciones, Calculadora de ROI, Guía de Plantas y Manual Solar. Todo GRATIS.
+             </p>
+           </div>
+           {bonusImage && (
+             <div className="w-full md:w-1/3 relative aspect-video md:aspect-square">
+               <Image 
+                 src={bonusImage.imageUrl}
+                 alt={bonusImage.description}
+                 fill
+                 className="object-contain animate-soft-float"
+                 data-ai-hint={bonusImage.imageHint}
+               />
+             </div>
+           )}
         </div>
       </div>
     </section>
