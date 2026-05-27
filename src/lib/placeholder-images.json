@@ -103,6 +103,12 @@
       "imageHint": "farm blueprint"
     },
     {
+      "id": "bonus-water",
+      "description": "Manual de Agua y Riego",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1779896748774-3c025729-45f8-4d9f-ab03-ee8c368aa1ee.png",
+      "imageHint": "water system"
+    },
+    {
       "id": "basic-plan-mockup",
       "description": "Basic Plan Mockup",
       "imageUrl": "https://www.image2url.com/r2/default/images/1777782450071-a0388525-e66b-4e68-988d-b3915a6fff5b.png",
@@ -207,7 +213,7 @@
     {
       "id": "testimonial-6",
       "description": "Testimonio real 06",
-      "imageUrl": "https://www.image2url.com/r2/default/images/1778636394813-07c11f56-46  b7-49a5-9834-4f24846eeb3e.png",
+      "imageUrl": "https://www.image2url.com/r2/default/images/1778636394813-07c11f56-46b7-49a5-9834-4f24846eeb3e.png",
       "imageHint": "client testimonial"
     },
     {
