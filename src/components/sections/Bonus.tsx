@@ -44,7 +44,7 @@ const bonuses = [
     id: 'bonus-special',
     badge: 'BONO 06',
     title: 'Manual de Agua y Riego',
-    desc: 'Descubre las plantas más rentables y cuánto ganan por m². Café, aguacate, cacao y más.',
+    desc: 'Capta agua de lluvia, arma cisternas e instala riego eficiente. Agua garantida todo el año.',
     oldPrice: '$17 USD'
   }
 ];
