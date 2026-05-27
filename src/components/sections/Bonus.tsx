@@ -1,3 +1,4 @@
+
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -55,7 +56,7 @@ export default function Bonus() {
                 <div className="bg-primary text-secondary px-4 py-1.5 text-[9px] font-bold tracking-[0.2em] text-center uppercase">
                   {bonus.badge}
                 </div>
-                <div className="relative h-80 bg-white/5 flex items-center justify-center p-4">
+                <div className="relative h-80 bg-white/5 p-4 flex items-center justify-center">
                   {imgData && (
                     <div 
                       className="relative w-full h-full animate-soft-float"
@@ -65,6 +66,7 @@ export default function Bonus() {
                         src={imgData.imageUrl}
                         alt={bonus.title}
                         fill
+                        unoptimized
                         className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)]"
                         data-ai-hint={imgData.imageHint}
                       />
