@@ -82,6 +82,8 @@ export default function Pricing() {
               <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 2:</strong> Calculadora ROI</li>
               <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 3:</strong> Plantas Compañeras</li>
               <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 4:</strong> Energía Solar Rural</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 5:</strong> Guía de Cultivos Pro</li>
+              <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> <strong>BONO 6:</strong> Manual de Agua/Riego</li>
               <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Acceso prioritario a nuevos proyectos</li>
               <li className="flex items-center gap-2 text-xs text-white/90 font-bold text-primary"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Actualizaciones gratuitas semanales</li>
               <li className="flex items-center gap-2 text-xs text-white/90"><Check className="text-primary w-4 h-4 flex-shrink-0" /> Garantía de 7 días</li>
