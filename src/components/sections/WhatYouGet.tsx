@@ -25,9 +25,9 @@ const categories = [
     description: 'Orgánico certificado, permacultura, agroturismo, agroindustria casera, energía renovable y más.',
   },
   {
-    number: '04',
+    number: '06',
     title: 'Bonos Exclusivos',
-    description: 'Recibirás además: Pack de Construcciones, Calculadora de ROI, Guía de Plantas y Manual de Energía Solar.',
+    description: 'Recibirás además: Pack de Construcciones, Calculadora de ROI, Plantas Compañeras, Energía Solar, Cultivos Pro y Agua/Riego.',
   }
 ];
 
