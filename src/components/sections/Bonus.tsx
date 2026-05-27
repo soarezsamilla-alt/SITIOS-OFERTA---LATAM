@@ -32,6 +32,13 @@ const bonuses = [
     title: 'Manual de Energía Solar Rural',
     desc: 'Dimensiona sistemas solares para casas rurales, pozos e irrigación. Cálculos paso a paso.',
     oldPrice: '$17 USD'
+  },
+  {
+    id: 'bonus-solar',
+    badge: 'BONO 05',
+    title: 'Manual de Energía Solar Rural',
+    desc: 'Dimensiona sistemas solares para casas rurales, pozos e irrigación. Cálculos paso a paso.',
+    oldPrice: '$17 USD'
   }
 ];
 
@@ -44,11 +51,11 @@ export default function Bonus() {
             Tú, Productor, <span className="text-primary italic">Mereces Aún Más</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Tu acceso incluye además estos 4 bonos estratégicos que complementan los +100 proyectos, totalmente GRATIS.
+            Tu acceso incluye además estos 5 bonos estratégicos que complementan los +100 proyectos, totalmente GRATIS.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {bonuses.map((bonus, idx) => {
             const imgData = PlaceHolderImages.find(img => img.id === bonus.id);
             return (
