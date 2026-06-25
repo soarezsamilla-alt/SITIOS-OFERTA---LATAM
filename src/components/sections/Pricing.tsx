@@ -64,8 +64,8 @@ export default function Pricing() {
               <span className="text-white/50 line-through block text-sm mb-1 font-medium tracking-tight">De $137 USD por</span>
               <div className="flex items-center justify-center gap-1">
                 <span className="text-2xl font-bold text-primary self-start mt-2">$</span>
-                <span className="text-6xl font-headline font-bold text-primary leading-none">9</span>
-                <span className="text-2xl font-bold text-primary self-start mt-2">,00</span>
+                <span className="text-6xl font-headline font-bold text-primary leading-none">7</span>
+                <span className="text-2xl font-bold text-primary self-start mt-2">,90</span>
               </div>
               <p className="text-[10px] text-white/50 mt-2 uppercase tracking-tight font-semibold">Pago único · Acceso de por vida + Bonos</p>
             </div>
@@ -90,7 +90,7 @@ export default function Pricing() {
             </ul>
 
             <Button asChild className="w-full py-6 text-lg font-bold gold-gradient text-background hover:scale-105 transition-all shadow-xl shimmer-btn animate-pulse-gold">
-              <a href="https://pay.hotmart.com/K105902897X?checkoutMode=10">QUIERO MI PROYECTO POR $9,00</a>
+              <a href="https://pay.hotmart.com/K105902897X?checkoutMode=10">QUIERO MI PROYECTO POR $7,90</a>
             </Button>
             
             <p className="mt-4 text-destructive font-bold text-[10px] animate-pulse">No volverás a encontrar este precio después.</p>

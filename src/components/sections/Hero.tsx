@@ -43,7 +43,7 @@ export default function Hero() {
             size="lg"
             className="gold-gradient text-background hover:scale-105 transition-transform duration-300 font-bold py-6 px-12 text-xl md:text-2xl rounded-xl shadow-[0_10px_40px_rgba(201,169,97,0.4)] shimmer-btn animate-pulse-gold"
           >
-            <a href="#pricing">QUIERO MI PROYECTO POR $9,00</a>
+            <a href="#pricing">QUIERO MI PROYECTO POR $7,90</a>
           </Button>
           <p className="text-primary text-[10px] font-semibold tracking-widest uppercase">
             ★ ACCESO INMEDIATO · 7 DÍAS DE GARANTÍA ★
