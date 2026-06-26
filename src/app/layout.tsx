@@ -3,7 +3,7 @@ import './globals.css';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Plan Rural | Pack +100 Proyectos de Fincas Productivas',
+  title: 'Plan Rural | Pack +100 Proyectos de fincas productivas',
   description: 'La colección definitiva de proyectos de fincas productivas de América Latina. +100 planos dimensionados con medidas, divisiones y diseños listos para ejecutar.',
 };
 
@@ -32,12 +32,6 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-        <Script
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          strategy="afterInteractive"
-        />
       </head>
       <body className="font-body antialiased">
         <noscript>
